@@ -1,0 +1,99 @@
+@import "../variables";
+
+.hero {
+  color: $white;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: {
+    image: url("../../images/hero.png");
+    size: cover;
+    repeat: no-repeat;
+  }
+
+  .outline_text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 30%;
+    font-size: 65px;
+    text-transform: uppercase;
+    z-index: 1;
+    line-height: 70px;
+    -webkit-text-stroke: 1px #b9aaad23;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .hero_details {
+    text-align: center;
+
+    h3 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 38px;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin : {
+        top: 24px;
+        bottom: 24px;
+      }
+    }
+
+    .hero_btn {
+      padding: 15px 32px;
+      color: $white;
+      text-emphasis: uppercase;
+      border-radius: 30px;
+      border: 2px solid #f5f5f5;
+      letter-spacing: 0.6;
+      transition: all 0.5s;
+      cursor: pointer !important;
+
+      font: {
+        size: 14px;
+        width: 700px;
+      }
+
+      &:hover {
+        background: $white !important;
+        color: $black !important ;
+      }
+    }
+  }
+
+  ::selection {
+    color: transparent;
+    background: transparent;
+  }
+
+  @media (min-width: $sm) {
+    .outline_text {
+      top: 30%;
+      font-size: 100px;
+    }
+
+    @media (min-width: $lg) {
+      .outline_text {
+        font-size: 150px;
+        top: 25%;
+      }
+
+      @media (min-width: $xl) {
+        .outline_text {
+          font-size: 160px;
+        }
+      }
+    }
+  }
+}
