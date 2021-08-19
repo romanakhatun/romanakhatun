@@ -28,26 +28,30 @@
     -webkit-text-fill-color: transparent;
     font-weight: 800;
     font-family: "Poppins", sans-serif;
+    display: none;
   }
 
   .hero_details {
     text-align: center;
 
-    h3 {
+    h5 {
       font-size: 24px;
-      margin-bottom: 24px;
+      margin-top: 10px;
+      text-transform: uppercase;
+      font-weight: $font-400;
     }
 
     h2 {
-      font-size: 38px;
-      text-transform: uppercase;
+      font-size: 55px;
+      font-weight: $font-600;
     }
 
     p {
       margin : {
-        top: 24px;
+        top: 15px;
         bottom: 24px;
       }
+      font-size: 22px;
     }
 
     .hero_btn {
@@ -70,10 +74,46 @@
         color: $black !important ;
       }
     }
+
+    .footer_socialIcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+
+      li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 0 3px;
+
+        a {
+          font-size: 14px;
+          width: 42px;
+          height: 42px;
+          line-height: 43px;
+          border-radius: 50%;
+          background: rgba(0, 0, 0, 0.3);
+          display: inline-block;
+          color: #fff;
+          -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          &:hover {
+            background: #fff;
+            color: #040c2c;
+          }
+        }
+      }
+    }
   }
 
   ::selection {
-    color: transparent;
+    color: White;
     background: transparent;
   }
 

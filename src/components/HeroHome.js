@@ -1,5 +1,6 @@
+import { Button, Container } from "@material-ui/core";
+import { FaLinkedinIn, FaTwitter, FaGithub } from "react-icons/fa";
 import styles from "../styles/components/heroHome.module.scss";
-import { Container, Button } from "@material-ui/core";
 
 const HeroHome = () => {
   return (
@@ -9,13 +10,41 @@ const HeroHome = () => {
       </span>
 
       <Container className={styles.hero_details}>
-        <h3>Welcome</h3>
-        <h2>I&apos;M web developer</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos dolorem{" "}
-          <br />
-          pariatur quo impedit accusantium maiores.
-        </p>
+        <h5>HELLO, WELCOME TO</h5>
+        <h2>ROMANA KHATUN</h2>
+        <p>Web developer & Front-end Developer </p>
+
+        <div className={styles.footer_socialIcon}>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/romanakhatun/"
+              rel="noreferrer"
+            >
+              <FaLinkedinIn />
+            </a>
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              href="https://github.com/romanakhatun/"
+              rel="noreferrer"
+            >
+              <FaGithub />
+            </a>
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              href="https://twitter.com/msromanakhatun"
+              rel="noreferrer"
+            >
+              <FaTwitter />
+            </a>
+          </li>
+        </div>
         <Button className={styles.hero_btn}>Download CV</Button>
       </Container>
     </section>
