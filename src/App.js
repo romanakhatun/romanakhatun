@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import About from "./components/About";
+import About from "./pages/About";
 import "./styles/global.scss";
 
 function App() {

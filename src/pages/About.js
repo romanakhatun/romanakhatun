@@ -1,12 +1,10 @@
 import React from "react";
-// import About from "../components/About";
-import Hero from "../components/Hero";
+import AboutMe from "../components/AboutMe";
 
 const About = () => {
   return (
     <div>
-      <Hero />
-      {/* <About /> */}
+      <AboutMe />
     </div>
   );
 };

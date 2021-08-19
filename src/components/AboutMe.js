@@ -2,17 +2,15 @@ import { Container } from "@material-ui/core";
 import coding from "../images/coding.jpg";
 import styles from "../styles/components/about.module.scss";
 
-const About = () => {
+const AboutMe = () => {
   return (
-    <section id="about" className={styles.about}>
+    <section className={styles.about}>
       <Container className={styles.about_container}>
         <div className={styles.about_picture}>
           <img src={coding} alt="code" />
         </div>
         <div className={styles.about_details}>
-          <h2>
-            <span>About</span> Me
-          </h2>
+          <h2>About Me</h2>
           <h4>
             Hello! <span>I&apos;M Romana Khatun.</span>
           </h4>
@@ -37,4 +35,4 @@ const About = () => {
     </section>
   );
 };
-export default About;
+export default AboutMe;
