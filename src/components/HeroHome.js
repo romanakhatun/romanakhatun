@@ -1,7 +1,7 @@
-import styles from "../styles/components/hero.module.scss";
+import styles from "../styles/components/heroHome.module.scss";
 import { Container, Button } from "@material-ui/core";
 
-const Hero = () => {
+const HeroHome = () => {
   return (
     <section className={styles.hero}>
       <span className={styles.outline_text}>
@@ -21,4 +21,4 @@ const Hero = () => {
     </section>
   );
 };
-export default Hero;
+export default HeroHome;

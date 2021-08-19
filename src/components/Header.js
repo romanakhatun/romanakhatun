@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { Container } from "@material-ui/core";
-import logo from "../images/logosm.png";
-import logoBlack from "../images/black-logo.png";
+import logo from "../images/logo.png";
+import logoBlack from "../images/black-russian-logo.png";
 import styles from "../styles/components/header.module.scss";
 
 const Header = () => {
