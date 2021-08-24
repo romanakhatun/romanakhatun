@@ -4,29 +4,41 @@
   background: $dark-light;
   padding: 70px 0px;
   text-align: center;
+  background: $black-russian;
 
   .footer_socialIcon {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1rem;
+    margin: {
+      bottom: 1rem;
+      top: 1rem;
+    }
 
-    .footer_socialSingleIconicon {
-      border-radius: 50%;
-      background-color: rgba(241, 241, 241, 0.08);
-      width: 44px;
-      height: 44px;
-      display: block;
-      font-size: 20px;
-      margin-right: 0.5rem;
-      padding-top: 12px;
+    li {
+      list-style-type: none;
+      display: inline-block;
+      margin: 0 3px;
 
-      svg {
-        color: #ababab;
-        transition: all 0.5s;
+      a {
+        font-size: 14px;
+        width: 42px;
+        height: 42px;
+        line-height: 43px;
+        border-radius: 50%;
+        border: 1px solid $white;
+        display: inline-block;
+        color: $white;
+        transition: all 0.3s linear;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
         &:hover {
-          color: #e65f78;
+          background: $white;
+          color: #040c2c;
         }
       }
     }

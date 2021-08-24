@@ -14,7 +14,7 @@ const HeroHome = () => {
         <h2>ROMANA KHATUN</h2>
         <p>Web developer & Front-end Developer </p>
 
-        <div className={styles.footer_socialIcon}>
+        <div className={styles.hero_socialIcon}>
           <li>
             <a
               target="_blank"

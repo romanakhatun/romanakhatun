@@ -6,10 +6,10 @@ const HeroPages = (props) => {
   console.log(props);
   return (
     <div className={styles.heroGlobalBox}>
-      <div  className={styles.heroGlobalBox_details}> 
-        <Link to="/"><FaHome /> Home </Link>
-        <span>/</span>
-        <Link to="/">{props.title}</Link>
+      <div className={styles.heroGlobalBox_details}> 
+        <span className={styles.heroGlobalBox_home}><FaHome /><Link to="/"> Home </Link></span>
+        <span className={styles.slas}>/</span>
+        <span className={styles.title}>{props.title}</span>
       </div>
     </div>
   );

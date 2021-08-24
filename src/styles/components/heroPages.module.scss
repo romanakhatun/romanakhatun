@@ -18,5 +18,31 @@
     list-style: none;
     background-color: #e9ecef;
     border-radius: 0.25rem;
+
+    .heroGlobalBox_home {
+      color: $black-russian;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        font-size: 20px;
+        padding-right: 3px;
+        cursor: pointer;
+      }
+    }
+
+    .slas {
+      color: $gray;
+      margin: {
+        left: 5px;
+        right: 5px;
+      }
+    }
+
+    .title {
+      color: $gray;
+    }
   }
 }
