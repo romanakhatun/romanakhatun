@@ -1,0 +1,22 @@
+@import "../variables";
+
+.heroGlobalBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background: $black-russian;
+
+  .heroGlobalBox_details {
+    background: $white;
+    box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    list-style: none;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+  }
+}

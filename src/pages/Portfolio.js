@@ -2,12 +2,12 @@ import React from "react";
 import AboutMe from "../components/AboutMe";
 import HeroPages from "../components/HeroPages";
 
-const About = () => {
+const Portfolio = () => {
   return (
     <div>
-      <HeroPages title="About" />
+      <HeroPages title="Portfolio" />
       <AboutMe />
     </div>
   );
 };
-export default About;
+export default Portfolio;
