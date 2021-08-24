@@ -10,25 +10,27 @@
   padding-top: 100px;
   padding-bottom: 100px;
 
+  h2 {
+    font-weight: 500;
+    font-size: calc(1.325rem + 0.9vw);
+    margin-top: 16px;
+    color: $black-russian;
+    text-align: center;
+  }
+
   .about_container {
-    .about_picture {
+    padding-top: 15px;
+
+    .about_img {
+      text-align: center;
       img {
-        width: 100%;
+        width: 60%;
         padding: 0.25rem;
         border-radius: 0.25rem;
-        max-width: 100%;
-        height: auto;
       }
     }
 
     .about_details {
-      h2 {
-        font-weight: 500;
-        font-size: calc(1.325rem + 0.9vw);
-        margin-top: 16px;
-        color: $black-russian;
-      }
-
       h4 {
         text-transform: uppercase;
         margin-top: 24px;
@@ -45,21 +47,57 @@
         color: $gray;
         margin-bottom: 14px;
       }
+
+      .about__appBar {
+        color: #9a9cb8;
+        box-shadow: none;
+        background-color: $white;
+        margin-bottom: 10px;
+
+        button[class^="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit"] {
+          margin-right: 10px;
+          min: {
+            height: 37px;
+            width: 54px;
+          }
+
+          span {
+            text-transform: capitalize;
+            color: $black-russian;
+          }
+        }
+
+        button[class^="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit Mui-selected"] {
+          background: #fff;
+          box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+
+          span {
+            color: $black;
+          }
+        }
+
+        span[class^="PrivateTabIndicator-root-1 PrivateTabIndicator-colorSecondary-3 MuiTabs-indicator"] {
+          background-color: transparent;
+        }
+      }
+      div[class^="MuiBox-root"] {
+        padding: 0px;
+      }
     }
   }
 
   @media (min-width: $lg) {
     .about_container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: grid;
+      grid-template-columns: 1.5fr 2fr;
 
-      .about_picture {
-        width: 45%;
+      .about_img {
+        img {
+          width: 70%;
+        }
       }
 
       .about_details {
-        width: 65%;
         margin-left: 10px;
       }
     }

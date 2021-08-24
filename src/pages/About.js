@@ -1,12 +1,12 @@
 import React from "react";
-import AboutMe from "../components/AboutMe";
+import AboutSe from "../components/AboutSe";
 import HeroPages from "../components/HeroPages";
 
 const About = () => {
   return (
     <div>
       <HeroPages title="About" />
-      <AboutMe />
+      <AboutSe />
     </div>
   );
 };
