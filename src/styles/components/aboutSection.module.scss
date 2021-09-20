@@ -1,6 +1,6 @@
 @import "../variables";
 
-.about {
+.aboutSection {
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -12,17 +12,19 @@
 
   h2 {
     font-weight: 500;
-    font-size: calc(1.325rem + 0.9vw);
+    font-size: 40px;
     margin-top: 16px;
     color: $black-russian;
     text-align: center;
+    text-transform: uppercase;
   }
 
-  .about_container {
+  .aboutSectionContainer {
     padding-top: 15px;
 
-    .about_img {
+    .aboutSectionImg {
       text-align: center;
+
       img {
         width: 60%;
         padding: 0.25rem;
@@ -30,7 +32,7 @@
       }
     }
 
-    .about_details {
+    .aboutSectionDetails {
       h4 {
         text-transform: uppercase;
         margin-top: 24px;
@@ -48,14 +50,19 @@
         margin-bottom: 14px;
       }
 
-      .about__appBar {
+      .aboutSectionAppBar {
         color: #9a9cb8;
         box-shadow: none;
         background-color: $white;
-        margin-bottom: 10px;
+
+        div[class^="MuiTabs-flexContainer"] {
+          justify-content: center;
+        }
 
         button[class^="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit"] {
           margin-right: 10px;
+          margin-top: 10px;
+          margin-bottom: 10px;
           min: {
             height: 37px;
             width: 54px;
@@ -63,41 +70,85 @@
 
           span {
             text-transform: capitalize;
-            color: $black-russian;
+            color: black;
           }
         }
 
         button[class^="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit Mui-selected"] {
-          background: #fff;
-          box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+          background-color: #fff;
+          box-shadow: 0px 0px 10px 0px #040c2b70;
 
           span {
-            color: $black;
+            color: $black-russian;
           }
         }
 
         span[class^="PrivateTabIndicator-root-1 PrivateTabIndicator-colorSecondary-3 MuiTabs-indicator"] {
-          background-color: transparent;
+          background-color: transparent !important;
         }
       }
-      div[class^="MuiBox-root"] {
-        padding: 0px;
+      .AboutSectionSkills {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 25px;
+        margin-top: 25px;
+
+        svg {
+          margin-right: 5px;
+        }
+
+        .AboutSectionSkill {
+          display: flex;
+          align-items: center;
+          box-shadow: 0px 0px 10px 0px #040c2b70;
+          color: $black-russian;
+          padding: 5px 10px;
+          margin: {
+            bottom: 10px;
+            left: 10px;
+          }
+        }
+      }
+
+      .aboutSectionWorks {
+        margin: 25px;
+        margin-top: 25px;
+
+        .aboutSectionWork {
+          box-shadow: 0px 0px 10px 0px #040c2b70;
+          padding: 24px;
+
+          div {
+            h4 {
+              font-size: 1.3rem;
+              font-weight: 500;
+              color: black;
+              text-transform: none;
+            }
+
+            h5 {
+              font-size: 15px;
+              border-radius: 0.25rem;
+              color: $white;
+            }
+          }
+        }
       }
     }
   }
 
   @media (min-width: $lg) {
-    .about_container {
+    .aboutSectionContainer {
       display: grid;
       grid-template-columns: 1.5fr 2fr;
 
-      .about_img {
+      .aboutSectionImg {
         img {
           width: 70%;
         }
       }
 
-      .about_details {
+      .aboutSectionDetails {
         margin-left: 10px;
       }
     }

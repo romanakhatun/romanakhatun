@@ -10,7 +10,7 @@ const HeroHome = () => {
       </span>
 
       <Container className={styles.hero_details}>
-        <h5>HELLO, WELCOME TO</h5>
+        {/* <h5>HELLO, WELCOME TO</h5> */}
         <h2>ROMANA KHATUN</h2>
         <p>Web developer & Front-end Developer </p>
 
