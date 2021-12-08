@@ -15,6 +15,8 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import styles from "../styles/components/aboutSection.module.scss";
+import profilePic from "../images/romana-pic.png";
+import internshipWork from "../images/internship-work.png";
 
 const AboutSection = () => {
   const [value, setValue] = useState(0);
@@ -53,10 +55,7 @@ const AboutSection = () => {
 
       <Container className={styles.aboutSectionContainer}>
         <div className={styles.aboutSectionImg}>
-          <img
-            src="https://romanakhatun.netlify.app/images/romana-pic.png"
-            alt="code"
-          />
+          <img src={profilePic} alt="code" />
         </div>
 
         <div className={styles.aboutSectionDetails}>
@@ -90,71 +89,69 @@ const AboutSection = () => {
             </div>
           </TabPanel>
           <TabPanel value={value} index={1}>
-            <div className={styles.AboutSectionSkills}>
-              <div className={styles.AboutSectionSkill}>
+            <div className={styles.aboutSectionSkills}>
+              <div className={styles.aboutSectionSkill}>
                 <FaReact />
                 <span>Reactjs</span>
               </div>
-              <div className={styles.AboutSectionSkill}>
+              <div className={styles.aboutSectionSkill}>
                 <span>Nextjs</span>
               </div>
-              <div className={styles.AboutSectionSkill}>
+              <div className={styles.aboutSectionSkill}>
                 <SiTypescript />
                 <span>TypeScript</span>
               </div>
-              <div className={styles.AboutSectionSkill}>
+              <div className={styles.aboutSectionSkill}>
                 <SiJavascript />
                 <span>JavaScript</span>
               </div>
-              <div className={styles.AboutSectionSkill}>
+              <div className={styles.aboutSectionSkill}>
                 <FaSass />
                 <span>Sass</span>
               </div>
-              <div className={styles.AboutSectionSkill}>
+              <div className={styles.aboutSectionSkill}>
                 <AiFillHtml5 />
                 <span>HTML</span>
               </div>
-              <div className={styles.AboutSectionSkill}>
+              <div className={styles.aboutSectionSkill}>
                 <FaCss3Alt />
                 <span>Css</span>
               </div>
-              <div className={styles.AboutSectionSkill}>
+              <div className={styles.aboutSectionSkill}>
                 <SiFirebase />
                 <span>Firebase</span>
               </div>
 
-              <div className={styles.AboutSectionSkill}>
+              <div className={styles.aboutSectionSkill}>
                 <AiFillGithub />
                 <span>Github</span>
               </div>
-              <div className={styles.AboutSectionSkill}>
+              <div className={styles.aboutSectionSkill}>
                 <SiNetlify />
                 <span>Netlify</span>
               </div>
-              <div className={styles.AboutSectionSkill}>
+              <div className={styles.aboutSectionSkill}>
                 <SiMaterialUi />
                 <span>Material-Ui</span>
               </div>
             </div>
           </TabPanel>
           <TabPanel value={value} index={2}>
-            <div className={styles.aboutSectionWorks}>
-              <div className={styles.aboutSectionWork}>
-                {/* <MdWork /> */}
-                <img
-                  alt="img"
-                  src="https://img.icons8.com/dotty/80/000000/internship.png"
-                />
-                <div>
-                  <h4>Web Developer at Namyata</h4>
-                  <h5>March 2020 - Running</h5>
-                  <p>
-                    I'm working as a web developer at Namyata Company. I'm
-                    working with programming-language React, NextJs, JavaScript,
-                    TypeScript, Sass, Html, CSS, Responsive Design, Re-Design
-                    Website
-                  </p>
-                </div>
+            <div className={styles.aboutSectionWork}>
+              <div className={styles.aboutSectionWorkIcon}>
+                <img src={internshipWork} alt="internshipWork" />
+              </div>
+              <div className={styles.aboutSectionWorkContent}>
+                <h4>Web Developer at Namyata</h4>
+                <span className={styles.aboutSectionWorkBadge}>
+                  March 2020 - Running
+                </span>
+                <p>
+                  I'm working as a web developer at Namyata Company. I'm working
+                  with programming-language React, NextJs, JavaScript,
+                  TypeScript, Sass, Html, CSS, Responsive Design, Re-Design
+                  Website
+                </p>
               </div>
             </div>
           </TabPanel>

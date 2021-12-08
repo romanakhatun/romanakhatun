@@ -42,18 +42,6 @@
     }
 
     .aboutSectionDetails {
-      h4 {
-        text-transform: uppercase;
-        margin-top: 24px;
-        margin-bottom: 20px;
-        font-size: calc(1.275rem + 0.3vw);
-        font-weight: 500;
-
-        span {
-          color: $pink;
-        }
-      }
-
       p {
         color: $gray;
         margin-bottom: 14px;
@@ -69,12 +57,9 @@
         }
 
         button[class^="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit"] {
-          margin-right: 5px;
-          margin-left: 5px;
-          margin-top: 20px;
-          margin-bottom: 10px;
           min-height: 37px;
           min-width: 54px;
+          margin: 20px 10px 5px 5px;
 
           span {
             text-transform: capitalize;
@@ -96,7 +81,7 @@
         }
       }
 
-      .AboutSectionSkills {
+      .aboutSectionSkills {
         display: flex;
         flex-wrap: wrap;
         margin-top: 25px;
@@ -105,7 +90,7 @@
           margin-right: 5px;
         }
 
-        .AboutSectionSkill {
+        .aboutSectionSkill {
           display: flex;
           align-items: center;
           box-shadow: 0px 0px 10px 0px #040c2b70;
@@ -118,26 +103,29 @@
         }
       }
 
-      .aboutSectionWorks {
+      .aboutSectionWork {
+        box-shadow: 0 5px 20px 0 rgb(69 67 96 / 28%);
+        padding: 24px;
         margin-top: 25px;
 
-        .aboutSectionWork {
-          box-shadow: 0px 0px 10px 0px #040c2b70;
-          padding: 24px;
+        .aboutSectionWorkIcon {
+          text-align: center;
+        }
 
-          div {
-            h4 {
-              font-size: 1.3rem;
-              font-weight: 500;
-              color: black;
-              text-transform: none;
-            }
+        .aboutSectionWorkContent {
+          h4 {
+            font-size: 23px;
+            font-weight: 500;
+            color: black;
+            text-transform: none;
+          }
 
-            h5 {
-              font-size: 15px;
-              border-radius: 0.25rem;
-              color: $white;
-            }
+          .aboutSectionWorkBadge {
+            font-size: 75%;
+            border-radius: 0.25rem;
+            color: $white;
+            background: $black-russian;
+            padding: 1px 3px;
           }
         }
       }
