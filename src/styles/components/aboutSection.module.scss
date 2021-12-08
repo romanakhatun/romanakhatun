@@ -10,13 +10,23 @@
   padding-top: 100px;
   padding-bottom: 100px;
 
-  h2 {
-    font-weight: 500;
-    font-size: 40px;
+  h1 {
     margin-top: 16px;
     color: $black-russian;
     text-align: center;
     text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px rgb(19, 5, 5);
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    letter-spacing: 0.02em;
   }
 
   .aboutSectionContainer {
@@ -27,8 +37,7 @@
 
       img {
         width: 60%;
-        padding: 0.25rem;
-        border-radius: 0.25rem;
+        box-shadow: 0 0 10px rgb(0 0 0 / 20%);
       }
     }
 
@@ -60,13 +69,12 @@
         }
 
         button[class^="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit"] {
-          margin-right: 10px;
-          margin-top: 10px;
+          margin-right: 5px;
+          margin-left: 5px;
+          margin-top: 20px;
           margin-bottom: 10px;
-          min: {
-            height: 37px;
-            width: 54px;
-          }
+          min-height: 37px;
+          min-width: 54px;
 
           span {
             text-transform: capitalize;
@@ -76,7 +84,7 @@
 
         button[class^="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit Mui-selected"] {
           background-color: #fff;
-          box-shadow: 0px 0px 10px 0px #040c2b70;
+          box-shadow: 0 0 10px rgb(0 0 0 / 20%);
 
           span {
             color: $black-russian;
@@ -87,10 +95,10 @@
           background-color: transparent !important;
         }
       }
+
       .AboutSectionSkills {
         display: flex;
         flex-wrap: wrap;
-        margin: 25px;
         margin-top: 25px;
 
         svg {
@@ -111,7 +119,6 @@
       }
 
       .aboutSectionWorks {
-        margin: 25px;
         margin-top: 25px;
 
         .aboutSectionWork {
@@ -136,20 +143,45 @@
       }
     }
   }
+}
 
-  @media (min-width: $lg) {
+@media only screen and (min-width: $xs) {
+  .aboutSection {
     .aboutSectionContainer {
-      display: grid;
-      grid-template-columns: 1.5fr 2fr;
-
       .aboutSectionImg {
         img {
-          width: 70%;
+          width: 40%;
         }
       }
+    }
+  }
 
-      .aboutSectionDetails {
-        margin-left: 10px;
+  @media only screen and (min-width: $md) {
+    .aboutSection {
+      .aboutSectionContainer {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+
+        .aboutSectionImg {
+          grid-column: 9 / 13;
+          grid-row: 1 / -1;
+          img {
+            width: 90%;
+            margin-top: 25px;
+          }
+        }
+
+        .aboutSectionDetails {
+          grid-column: 1 / 9;
+          grid-row: 1 / -1;
+
+          .aboutSectionAppBar {
+            margin-left: 10px;
+            div[class^="MuiTabs-flexContainer"] {
+              justify-content: left;
+            }
+          }
+        }
       }
     }
   }

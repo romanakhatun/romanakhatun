@@ -51,10 +51,15 @@ const AboutSection = () => {
 
   return (
     <section className={styles.aboutSection}>
-      <h2>About Me</h2>
+      <h1>About Me</h1>
+      <h2>who am i?</h2>
+
       <Container className={styles.aboutSectionContainer}>
         <div className={styles.aboutSectionImg}>
-          <img src={coding} alt="code" />
+          <img
+            src="https://romanakhatun.netlify.app/images/romana-pic.png"
+            alt="code"
+          />
         </div>
 
         <div className={styles.aboutSectionDetails}>
@@ -138,7 +143,11 @@ const AboutSection = () => {
           <TabPanel value={value} index={2}>
             <div className={styles.aboutSectionWorks}>
               <div className={styles.aboutSectionWork}>
-                <MdWork />
+                {/* <MdWork /> */}
+                <img
+                  alt="img"
+                  src="https://img.icons8.com/dotty/80/000000/internship.png"
+                />
                 <div>
                   <h4>Web Developer at Namyata</h4>
                   <h5>March 2020 - Running</h5>

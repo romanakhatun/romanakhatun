@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <header
       id={styles.header}
-      className={navbarActive ? styles.navber_activeContainer : styles.navbar}
+      className={navbarActive ? styles.navbar_activeContainer : styles.navbar}
     >
       <Container>
         <div className={styles.navbar_details}>
@@ -38,28 +38,26 @@ const Header = () => {
           </div>
 
           <div className={styles.menu}>
-            <ul>
-              <li>
-                <NavLink exact activeClassName={styles.active} to="/">
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink exact activeClassName={styles.active} to="/about">
-                  About
-                </NavLink>
-              </li>
-              <li>
-                <NavLink exact activeClassName={styles.active} to="/portfolio">
-                  Portfolio
-                </NavLink>
-              </li>
-              <li>
-                <NavLink exact activeClassName={styles.active} to="/contact">
-                  Contact
-                </NavLink>
-              </li>
-            </ul>
+            <li>
+              <NavLink exact activeClassName={styles.active} to="/">
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink exact activeClassName={styles.active} to="/about">
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink exact activeClassName={styles.active} to="/portfolio">
+                Portfolio
+              </NavLink>
+            </li>
+            <li>
+              <NavLink exact activeClassName={styles.active} to="/contact">
+                Contact
+              </NavLink>
+            </li>
           </div>
         </div>
       </Container>

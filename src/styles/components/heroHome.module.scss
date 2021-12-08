@@ -8,130 +8,155 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background: {
     image: url("../../images/black-russian-hero.png");
     size: cover;
     repeat: no-repeat;
   }
 
-  .outline_text {
-    position: absolute;
-    left: 0;
-    right: 0;
-    text-align: center;
-    top: 30%;
-    font-size: 65px;
+  .hero_welcomeFirst {
+    font-size: 16px;
     text-transform: uppercase;
-    z-index: 1;
-    line-height: 70px;
-    -webkit-text-stroke: 1px #b9aaad23;
-    -webkit-text-fill-color: transparent;
-    font-weight: 800;
-    font-family: "Poppins", sans-serif;
-    display: none;
+    font-weight: 300;
+    margin-bottom: 5px;
   }
 
-  .hero_details {
+  .hero_welcomeName {
     text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #fff;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    letter-spacing: 0.3em;
 
-    h5 {
-      font-size: 24px;
-      margin-top: 10px;
-      text-transform: uppercase;
-      font-weight: $font-400;
+    .hero_welcomeLastName {
+      display: none;
+    }
+  }
+
+  p {
+    font-size: inherit;
+    line-height: 1.7;
+    margin : {
+      top: 15px;
+      bottom: 24px;
+    }
+  }
+
+  .hero_btn {
+    padding: 15px 32px;
+    color: $white;
+    text-emphasis: uppercase;
+    border-radius: 30px;
+    border: 2px solid #f5f5f5;
+    letter-spacing: 0.6;
+    transition: all 0.5s;
+    cursor: pointer !important;
+
+    font: {
+      size: 14px;
+      width: 700px;
     }
 
-    h2 {
-      font-size: 55px;
-      font-weight: $font-600;
+    &:hover {
+      background: $white !important;
+      color: $black !important ;
     }
+  }
 
-    p {
-      margin : {
-        top: 15px;
-        bottom: 24px;
-      }
-      font-size: 22px;
-    }
+  .hero_socialIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
 
-    .hero_btn {
-      padding: 15px 32px;
-      color: $white;
-      text-emphasis: uppercase;
-      border-radius: 30px;
-      border: 2px solid #f5f5f5;
-      letter-spacing: 0.6;
-      transition: all 0.5s;
-      cursor: pointer !important;
+    li {
+      list-style-type: none;
+      display: inline-block;
+      margin: 0 3px;
 
-      font: {
-        size: 14px;
-        width: 700px;
-      }
-
-      &:hover {
-        background: $white !important;
-        color: $black !important ;
-      }
-    }
-
-    .hero_socialIcon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1rem;
-
-      li {
-        list-style-type: none;
+      a {
+        font-size: 14px;
+        width: 42px;
+        height: 42px;
+        line-height: 43px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.3);
         display: inline-block;
-        margin: 0 3px;
+        color: #fff;
+        -webkit-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-        a {
-          font-size: 14px;
-          width: 42px;
-          height: 42px;
-          line-height: 43px;
-          border-radius: 50%;
-          background: rgba(0, 0, 0, 0.3);
-          display: inline-block;
-          color: #fff;
-          -webkit-transition: all 0.3s linear;
-          transition: all 0.3s linear;
-          text-align: center;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-
-          &:hover {
-            background: #fff;
-            color: #040c2c;
-          }
+        &:hover {
+          background: #fff;
+          color: #040c2c;
         }
       }
     }
   }
+}
 
-  ::selection {
-    color: White;
-    background: transparent;
+::selection {
+  color: White;
+  background: transparent;
+}
+
+@media only screen and (min-width: $xs) {
+  .hero {
+    .hero_welcomeName {
+      .hero_welcomeLastName {
+        display: inline-block;
+      }
+    }
   }
 
-  @media (min-width: $sm) {
-    .outline_text {
-      top: 30%;
-      font-size: 100px;
-    }
-
-    @media (min-width: $lg) {
-      .outline_text {
-        font-size: 150px;
-        top: 25%;
+  @media only screen and (min-width: $sm) {
+    .hero {
+      .hero_welcomeFirst {
+        font-size: 20px;
       }
 
-      @media (min-width: $xl) {
-        .outline_text {
-          font-size: 160px;
+      .hero_welcomeName {
+        font-size: 60px;
+      }
+    }
+
+    @media only screen and (min-width: $md) {
+      .hero {
+        .hero_welcomeFirst {
+          font-size: 26px;
+        }
+
+        .hero_welcomeName {
+          font-size: 80px;
+        }
+
+        p {
+          font-size: 18px;
+          padding: 0 30px;
+        }
+      }
+
+      @media only screen and (min-width: $lg) {
+        .hero {
+          p {
+            padding: 0 200px;
+          }
+        }
+
+        @media only screen and (min-width: $xl) {
+          .hero {
+            p {
+              padding: 0 250px;
+            }
+          }
         }
       }
     }
