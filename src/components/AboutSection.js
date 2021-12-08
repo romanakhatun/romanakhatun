@@ -9,9 +9,6 @@ import {
   SiMaterialUi,
 } from "react-icons/si";
 import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
-import { MdWork } from "react-icons/md";
-import "aos/dist/aos.css";
-import coding from "../images/coding.jpg";
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
