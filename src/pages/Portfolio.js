@@ -1,11 +1,13 @@
 import React from "react";
 import HeroPages from "../components/HeroPages";
+import PortfolioSection from "../components/PortfolioSection";
 
 const Portfolio = () => {
   return (
-    <div>
+    <>
       <HeroPages title="Portfolio" />
-    </div>
+      <PortfolioSection />
+    </>
   );
 };
 export default Portfolio;

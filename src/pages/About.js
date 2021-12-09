@@ -4,10 +4,10 @@ import HeroPages from "../components/HeroPages";
 
 const About = () => {
   return (
-    <div>
+    <>
       <HeroPages title="About" />
       <AboutSection />
-    </div>
+    </>
   );
 };
 export default About;

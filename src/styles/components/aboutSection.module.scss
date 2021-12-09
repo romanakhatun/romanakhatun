@@ -1,17 +1,18 @@
 @import "../variables";
+@import "../utilites";
 
-.aboutSection {
-  min-height: 100vh;
+.about {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
+  border-bottom: 1px solid #dce1e4;
+  margin-top: 100px;
   padding-bottom: 100px;
 
   h1 {
-    margin-top: 16px;
+    margin: 10px 0;
     color: $black-russian;
     text-align: center;
     text-transform: uppercase;
@@ -29,90 +30,96 @@
     letter-spacing: 0.02em;
   }
 
-  .aboutSectionContainer {
-    padding-top: 15px;
+  .aboutDetails {
+    p {
+      margin-bottom: 14px;
+    }
 
-    .aboutSectionImg {
-      text-align: center;
+    .aboutAppBar {
+      color: #9a9cb8;
+      box-shadow: none;
+      background-color: transparent;
 
-      img {
-        width: 60%;
-        box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+      div[class^="MuiTabs-flexContainer"] {
+        justify-content: center;
+      }
+
+      button[class^="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit"] {
+        min-height: 37px;
+        min-width: 54px;
+        margin: 30px 10px 20px 10px;
+        border-radius: 3px;
+
+        span {
+          text-transform: capitalize;
+          color: $black-russian;
+        }
+      }
+
+      button[class^="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit Mui-selected"] {
+        @include boxShadow(#e2e8ec, #ffffff);
+      }
+
+      span[class^="PrivateTabIndicator-root-1 PrivateTabIndicator-colorSecondary-3 MuiTabs-indicator"] {
+        background-color: transparent !important;
       }
     }
 
-    .aboutSectionDetails {
-      p {
-        color: $gray;
-        margin-bottom: 14px;
-      }
+    .aboutChildrenData {
+      margin-top: 23px;
 
-      .aboutSectionAppBar {
-        color: #9a9cb8;
-        box-shadow: none;
-        background-color: $white;
-
-        div[class^="MuiTabs-flexContainer"] {
-          justify-content: center;
+      .aboutContent {
+        .badge {
+          cursor: pointer;
+          font-weight: bold;
+          @include badge(80%, 2px, #fff);
         }
 
-        button[class^="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit"] {
-          min-height: 37px;
-          min-width: 54px;
-          margin: 20px 10px 5px 5px;
+        .aboutBtn {
+          padding: 15px 32px;
+          text-transform: uppercase;
+          transition: all 0.5s;
+          cursor: pointer !important;
+          font-size: 14px;
+          transition: all 0.4s;
+          background: $black-russian;
+          color: $white;
+          transition: 0.4s;
 
-          span {
-            text-transform: capitalize;
-            color: black;
+          &:hover {
+            transform: translateY(-3px);
           }
-        }
-
-        button[class^="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit Mui-selected"] {
-          background-color: #fff;
-          box-shadow: 0 0 10px rgb(0 0 0 / 20%);
-
-          span {
-            color: $black-russian;
-          }
-        }
-
-        span[class^="PrivateTabIndicator-root-1 PrivateTabIndicator-colorSecondary-3 MuiTabs-indicator"] {
-          background-color: transparent !important;
         }
       }
 
-      .aboutSectionSkills {
+      .aboutSkills {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 25px;
 
         svg {
           margin-right: 5px;
+          width: 17px;
         }
 
-        .aboutSectionSkill {
+        .aboutSkill {
           display: flex;
           align-items: center;
-          box-shadow: 0px 0px 10px 0px #040c2b70;
           color: $black-russian;
           padding: 5px 10px;
           margin: {
             bottom: 10px;
             left: 10px;
           }
+          @include boxShadow(#e2e8ec, #ffffff);
         }
       }
 
-      .aboutSectionWork {
-        box-shadow: 0 5px 20px 0 rgb(69 67 96 / 28%);
+      .aboutWork {
         padding: 24px;
-        margin-top: 25px;
+        border-radius: 10px;
+        @include boxShadow(#e2e8ec, #ffffff);
 
-        .aboutSectionWorkIcon {
-          text-align: center;
-        }
-
-        .aboutSectionWorkContent {
+        .aboutWorkContent {
           h4 {
             font-size: 23px;
             font-weight: 500;
@@ -120,12 +127,10 @@
             text-transform: none;
           }
 
-          .aboutSectionWorkBadge {
-            font-size: 75%;
-            border-radius: 0.25rem;
-            color: $white;
-            background: $black-russian;
-            padding: 1px 3px;
+          .badge {
+            display: inline-block;
+            margin: 7px 0;
+            @include badge(75%, 0.25rem, #fff);
           }
         }
       }
@@ -133,40 +138,40 @@
   }
 }
 
-@media only screen and (min-width: $xs) {
-  .aboutSection {
-    .aboutSectionContainer {
-      .aboutSectionImg {
-        img {
-          width: 40%;
+@media only screen and (min-width: $sm) {
+  .about {
+    .aboutDetails {
+      .aboutChildrenData {
+        width: 90%;
+        margin: 0 auto;
+
+        .aboutWork {
+          width: 80%;
+          margin: 0 auto;
         }
       }
     }
   }
 
   @media only screen and (min-width: $md) {
-    .aboutSection {
-      .aboutSectionContainer {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
+    .about {
+      .aboutDetails {
+        .aboutChildrenData {
+          width: 70%;
 
-        .aboutSectionImg {
-          grid-column: 9 / 13;
-          grid-row: 1 / -1;
-          img {
-            width: 90%;
-            margin-top: 25px;
+          .aboutWork {
+            width: 65%;
           }
         }
+      }
+    }
 
-        .aboutSectionDetails {
-          grid-column: 1 / 9;
-          grid-row: 1 / -1;
-
-          .aboutSectionAppBar {
-            margin-left: 10px;
-            div[class^="MuiTabs-flexContainer"] {
-              justify-content: left;
+    @media only screen and (min-width: $lg) {
+      .about {
+        .aboutDetails {
+          .aboutChildrenData {
+            .aboutWork {
+              width: 50%;
             }
           }
         }

@@ -10,19 +10,20 @@
   align-items: center;
   text-align: center;
   background: {
-    image: url("../../images/black-russian-hero.png");
+    image: url(../../../public/images/hero-bg.svg);
     size: cover;
     repeat: no-repeat;
+    attachment: fixed;
   }
 
-  .hero_welcomeFirst {
+  .heroWelcomeFirst {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 300;
     margin-bottom: 5px;
   }
 
-  .hero_welcomeName {
+  .heroWelcomeName {
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
@@ -31,7 +32,7 @@
     font-weight: 800;
     letter-spacing: 0.3em;
 
-    .hero_welcomeLastName {
+    .heroWelcomeName {
       display: none;
     }
   }
@@ -45,28 +46,7 @@
     }
   }
 
-  .hero_btn {
-    padding: 15px 32px;
-    color: $white;
-    text-emphasis: uppercase;
-    border-radius: 30px;
-    border: 2px solid #f5f5f5;
-    letter-spacing: 0.6;
-    transition: all 0.5s;
-    cursor: pointer !important;
-
-    font: {
-      size: 14px;
-      width: 700px;
-    }
-
-    &:hover {
-      background: $white !important;
-      color: $black !important ;
-    }
-  }
-
-  .hero_socialIcon {
+  .heroSocial {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,15 +83,10 @@
   }
 }
 
-::selection {
-  color: White;
-  background: transparent;
-}
-
 @media only screen and (min-width: $xs) {
   .hero {
-    .hero_welcomeName {
-      .hero_welcomeLastName {
+    .heroWelcomeName {
+      .heroWelcomeName {
         display: inline-block;
       }
     }
@@ -119,22 +94,22 @@
 
   @media only screen and (min-width: $sm) {
     .hero {
-      .hero_welcomeFirst {
+      .heroWelcomeFirst {
         font-size: 20px;
       }
 
-      .hero_welcomeName {
+      .heroWelcomeName {
         font-size: 60px;
       }
     }
 
     @media only screen and (min-width: $md) {
       .hero {
-        .hero_welcomeFirst {
+        .heroWelcomeFirst {
           font-size: 26px;
         }
 
-        .hero_welcomeName {
+        .heroWelcomeName {
           font-size: 80px;
         }
 

@@ -1,13 +1,15 @@
 import React from "react";
-import AboutSection from "../components/AboutSection";
 import HeroHome from "../components/HeroHome";
+import AboutSection from "../components/AboutSection";
+import PortfolioSection from "../components/PortfolioSection";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <HeroHome />
       <AboutSection />
-    </div>
+      <PortfolioSection />
+    </>
   );
 };
 export default Home;

@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Power x Gym",
+    "image": "/projects/doctors-portal.png",
+    "des": "This very website you're now watching. I wanted something fast and with good SEO for my portfolio, so i would like to add react that seemed best fit. It reads data from markdown files, so it's super easy forme to keep adding Portfolio items as I keep developing stuff. It also has a cool dark mode switch since I couldn't update till now but i will update it very soon.",
+    "technology": "React - Styled Components - Module CSS",
+    "link": "https://amreshk005.netlify.app",
+    "githubLink": "https://github.com/amreshk005/Real-port"
+  }
+]

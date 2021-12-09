@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { Container } from "@material-ui/core";
-import logo from "../images/logo.png";
-import logoBlack from "../images/black-russian-logo.png";
 import styles from "../styles/components/header.module.scss";
 
 const Header = () => {
@@ -28,11 +26,11 @@ const Header = () => {
           <div className={styles.logo}>
             {navbarActive ? (
               <Link to="/">
-                <img src={logoBlack} alt="logo" />
+                <img src="images/black-russian-logo.png" alt="logo" />
               </Link>
             ) : (
               <Link to="/">
-                <img src={logo} alt="logo" />
+                <img src="images/logo.png" alt="logo" />
               </Link>
             )}
           </div>
