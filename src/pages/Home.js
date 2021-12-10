@@ -1,14 +1,16 @@
 import React from "react";
 import HeroHome from "../components/HeroHome";
-import AboutSection from "../components/AboutSection";
-import PortfolioSection from "../components/PortfolioSection";
+import About from "../components/About";
+import Portfolio from "../components/Portfolio";
 
-const Home = () => {
+const Home = (props) => {
+  const pathName = props.location.pathname;
+
   return (
     <>
       <HeroHome />
-      <AboutSection />
-      <PortfolioSection />
+      <About homePath={pathName} />
+      <Portfolio homePath={pathName} />
     </>
   );
 };
