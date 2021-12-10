@@ -58,6 +58,10 @@
 
       button[class^="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit Mui-selected"] {
         @include boxShadow($box-shadow-bg1, $box-shadow-bg2);
+
+        span {
+          font-weight: 600;
+        }
       }
 
       span[class^="PrivateTabIndicator-root-1 PrivateTabIndicator-colorSecondary-3 MuiTabs-indicator"] {
@@ -88,6 +92,10 @@
 
           &:hover {
             transform: translateY(-3px);
+          }
+
+          svg {
+            margin-left: 5px;
           }
         }
       }

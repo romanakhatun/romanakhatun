@@ -1,7 +1,6 @@
 @import "../variables";
 
 .footer {
-  background: $dark-light;
   padding: 70px 0px;
   text-align: center;
   background: $black-russian;
@@ -38,7 +37,7 @@
 
         &:hover {
           background: $white;
-          color: #040c2c;
+          color: $black-russian;
         }
       }
     }

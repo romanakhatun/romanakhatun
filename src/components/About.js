@@ -18,6 +18,7 @@ import {
 } from "react-icons/si";
 import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
 import { FaNode } from "react-icons/fa";
+import { BiCloudDownload } from "react-icons/bi";
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
@@ -25,6 +26,7 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import styles from "../styles/components/about.module.scss";
 import HeroPages from "./HeroPages";
+import { FiDownloadCloud } from "react-icons/fi";
 
 const About = ({ homePath }) => {
   const [value, setValue] = useState(0);
@@ -64,10 +66,6 @@ const About = ({ homePath }) => {
         <h2>who am i? </h2>
 
         <Container>
-          <div className={styles.aboutImg}>
-            {/* <img src={profilePic} alt="code" /> */}
-          </div>
-
           <div className={styles.aboutDetails}>
             <AppBar position="static" className={styles.aboutAppBar}>
               <Tabs
@@ -82,6 +80,7 @@ const About = ({ homePath }) => {
                 <Tab label="Experience" {...a11yProps(2)} />
               </Tabs>
             </AppBar>
+
             <TabPanel value={value} index={0} className={styles.aboutTabPanel}>
               <div className={styles.aboutContent}>
                 <p>if you're wondering who I am..</p>
@@ -100,9 +99,15 @@ const About = ({ homePath }) => {
                   successfully delegate challenging tasks.
                 </p>
 
-                <Button className={styles.aboutBtn}>Download my resume</Button>
+                <Button className={styles.aboutBtn}>
+                  <a href="images/romana-resume.pdf" download>
+                    Download my resume
+                  </a>{" "}
+                  <FiDownloadCloud />
+                </Button>
               </div>
             </TabPanel>
+
             <TabPanel value={value} index={1}>
               <div className={styles.aboutSkills}>
                 <div className={styles.aboutSkill}>
@@ -191,6 +196,7 @@ const About = ({ homePath }) => {
                 </div>
               </div>
             </TabPanel>
+
             <TabPanel value={value} index={2}>
               <div className={styles.aboutWork}>
                 <img src="/images/internship-work.png" alt="internshipWork" />
