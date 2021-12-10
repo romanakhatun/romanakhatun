@@ -2,5 +2,42 @@
 @import "../utilites";
 
 .hireMe {
-  @include boxShadow(#ff014f, #d11414);
+  background: $black-russian;
+  text-align: center;
+  padding: 3rem 2rem;
+  background-image: linear-gradient(316deg, #d11414 0, #ff014f 74%);
+  border-radius: 0.35rem;
+
+  h2 {
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: $white;
+    margin-bottom: 30px;
+  }
+
+  button {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border: 1px solid #fff;
+    border-radius: 0.35rem;
+    background: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    svg {
+      margin-right: 5px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: $lg) {
+  .hireMe {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
