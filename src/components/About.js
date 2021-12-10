@@ -18,7 +18,6 @@ import {
 } from "react-icons/si";
 import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
 import { FaNode } from "react-icons/fa";
-import { BiCloudDownload } from "react-icons/bi";
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
@@ -63,7 +62,7 @@ const About = ({ homePath }) => {
       {homePath ? null : <HeroPages title="About" />}
       <div className={styles.about}>
         <h1>About Me</h1>
-        <h2>who am i? </h2>
+        <h2>Who Am i? </h2>
 
         <Container>
           <div className={styles.aboutDetails}>
@@ -99,7 +98,7 @@ const About = ({ homePath }) => {
                   successfully delegate challenging tasks.
                 </p>
 
-                <Button className={styles.aboutBtn}>
+                <Button className={styles.aboutDownloadBtn}>
                   <a href="images/romana-resume.pdf" download>
                     Download my resume
                   </a>{" "}

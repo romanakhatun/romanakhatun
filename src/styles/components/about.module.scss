@@ -23,7 +23,7 @@
   h2 {
     text-align: center;
     font-size: 32px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     -webkit-text-stroke: 1px rgb(19, 5, 5);
     -webkit-text-fill-color: transparent;
     font-weight: 800;
@@ -79,16 +79,18 @@
           @include badge(80%, 2px, #fff);
         }
 
-        .aboutBtn {
+        .aboutDownloadBtn {
           padding: 15px 32px;
-          text-transform: uppercase;
-          transition: all 0.5s;
-          cursor: pointer !important;
-          font-size: 14px;
-          transition: all 0.4s;
+          text-transform: capitalize;
+          cursor: pointer;
           background: $black-russian;
           color: $white;
           transition: 0.4s;
+          font-size: 14px;
+          font-weight: 700;
+          border-radius: 6px;
+          letter-spacing: 1px;
+          background: linear-gradient(145deg, #ff014f, #d11414);
 
           &:hover {
             transform: translateY(-3px);
