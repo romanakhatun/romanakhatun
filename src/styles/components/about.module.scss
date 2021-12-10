@@ -57,7 +57,7 @@
       }
 
       button[class^="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit Mui-selected"] {
-        @include boxShadow(#e2e8ec, #ffffff);
+        @include boxShadow($box-shadow-bg1, $box-shadow-bg2);
       }
 
       span[class^="PrivateTabIndicator-root-1 PrivateTabIndicator-colorSecondary-3 MuiTabs-indicator"] {
@@ -110,14 +110,14 @@
             bottom: 10px;
             left: 10px;
           }
-          @include boxShadow(#e2e8ec, #ffffff);
+          @include boxShadow($box-shadow-bg1, $box-shadow-bg2);
         }
       }
 
       .aboutWork {
         padding: 24px;
         border-radius: 10px;
-        @include boxShadow(#e2e8ec, #ffffff);
+        @include boxShadow($box-shadow-bg1, $box-shadow-bg2);
 
         .aboutWorkContent {
           h4 {

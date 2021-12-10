@@ -1,0 +1,6 @@
+@import "../variables";
+@import "../utilites";
+
+.hireMe {
+  @include boxShadow(#ff014f, #d11414);
+}

@@ -1,5 +1,7 @@
 import { Button, Container } from "@material-ui/core";
+import { Link } from "react-router-dom";
 import data from "../data.json";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import styles from "../styles/components/portfolio.module.scss";
 import HeroPages from "./HeroPages";
 
@@ -47,6 +49,13 @@ const Portfolio = ({ homePath }) => {
             );
           })}
         </Container>
+        {homePath ? (
+          <Link to="/portfolio">
+            <button className={styles.projectViewAll}>
+              View All <MdOutlineKeyboardArrowRight />{" "}
+            </button>
+          </Link>
+        ) : null}
       </div>
     </>
   );

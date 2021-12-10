@@ -38,7 +38,7 @@
     margin-top: 20px;
 
     .portfolioWork {
-      @include boxShadow(#e2e8ec, #ffffff);
+      @include boxShadow($box-shadow-bg1, $box-shadow-bg2);
       padding: 20px;
       border-radius: 10px;
       display: flex;
@@ -92,6 +92,31 @@
           border: 1px solid $black-russian;
         }
       }
+    }
+  }
+
+  .projectViewAll {
+    margin-top: 40px;
+    color: $black-russian;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    padding: 15px 35px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 6px;
+    @include boxShadow($box-shadow-bg1, $box-shadow-bg2);
+
+    &:hover {
+      @include boxShadow(#ff014f, #d11414);
+      transform: translateY(-5px);
+      color: $white;
+    }
+
+    svg {
+      font-size: 17px;
     }
   }
 }
