@@ -1,7 +1,7 @@
 ## Hey there! I'm Romana Khatun and <img align="center" src="https://img.icons8.com/external-kmg-design-flat-kmg-design/32/000000/external-love-valentines-day-kmg-design-flat-kmg-design-1.png"/> code
 
 
-<p align="center"><img align="center" width="150" height="150" src="https://github.com/romanakhatun/romana-khatun/blob/main/assets/coding.png"></p>
+<p align="center"><img align="center" width="150" height="150" src="/assets/coding.png"></p>
 
 - Developer | Programmer | Learner
 - Currently learning everything 🤣
@@ -34,15 +34,15 @@
 
 <p>
 <a href="https://www.linkedin.com/in/romanakhatun">
-  <img align="left" alt="Romana Khatun | LinkedIn" width="26px" src="https://github.com/romanakhatun/romana-khatun/blob/main/assets/linkedin.png">
+  <img align="left" alt="Romana Khatun | LinkedIn" width="26px" src="/assets/linkedin.png">
 </a>
 
 <a href="https://twitter.com/msromanakhatun">
-  <img align="left" alt="Romana Khatun | Twitter" width="26px" src="https://github.com/romanakhatun/romana-khatun/blob/main/assets/twitter.png">
+  <img align="left" alt="Romana Khatun | Twitter" width="26px" src="/assets/twitter.png">
 </a>
 
 <a href="mailto:romanakhatun2004@gmail.com">
-  <img align="left" alt="Romana Khatun | Gmail" width="26px" src="https://github.com/romanakhatun/romana-khatun/blob/main/assets/gmail.png" />
+  <img align="left" alt="Romana Khatun | Gmail" width="26px" src="/assets/gmail.png" />
 </a>
 </p>
 <br />
