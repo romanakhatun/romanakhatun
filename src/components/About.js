@@ -15,20 +15,24 @@ import {
   SiVercel,
   SiMaterialui,
   SiExpress,
+  SiPwa,
 } from "react-icons/si";
 import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
 import { FaNode } from "react-icons/fa";
+import { FiDownloadCloud } from "react-icons/fi";
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import styles from "../styles/components/about.module.scss";
+import { WebsiteName } from "../App";
 import HeroPages from "./HeroPages";
-import { FiDownloadCloud } from "react-icons/fi";
+import styles from "../styles/components/about.module.scss";
 
 const About = ({ homePath }) => {
   const [value, setValue] = useState(0);
+
+  document.title = "About | " + WebsiteName;
 
   const TabPanel = (props) => {
     const { children, value, index, ...other } = props;
@@ -62,7 +66,7 @@ const About = ({ homePath }) => {
       {homePath ? null : <HeroPages title="About" />}
       <div className={styles.about}>
         <h1>About Me</h1>
-        <h2>Who Am i? </h2>
+        <h2>Who Am i ?</h2>
 
         <Container>
           <div className={styles.aboutDetails}>
@@ -134,12 +138,16 @@ const About = ({ homePath }) => {
                   <span>HTML</span>
                 </div>
                 <div className={styles.aboutSkill}>
+                  <FaCss3Alt />
+                  <span>Css</span>
+                </div>
+                <div className={styles.aboutSkill}>
                   <FaSass />
                   <span>Sass</span>
                 </div>
                 <div className={styles.aboutSkill}>
-                  <FaCss3Alt />
-                  <span>Css</span>
+                  <SiPwa />
+                  <span>PWA</span>
                 </div>
                 <div className={styles.aboutSkill}>
                   <SiFirebase />

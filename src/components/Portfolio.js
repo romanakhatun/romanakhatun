@@ -1,11 +1,14 @@
 import { Container } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import data from "../data.json";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import styles from "../styles/components/portfolio.module.scss";
+import { WebsiteName } from "../App";
+import data from "../data.json";
 import HeroPages from "./HeroPages";
+import styles from "../styles/components/portfolio.module.scss";
 
 const Portfolio = ({ homePath }) => {
+  document.title = "Portfolio | " + WebsiteName;
+
   return (
     <>
       {homePath ? null : <HeroPages title="Portfolio" />}

@@ -13,7 +13,7 @@
 
   h1 {
     margin: 10px 0;
-    color: $black-russian;
+    color: $primary-color;
     text-align: center;
     text-transform: uppercase;
     font-size: 24px;
@@ -39,6 +39,7 @@
       color: #9a9cb8;
       box-shadow: none;
       background-color: transparent;
+      margin-bottom: 20px;
 
       div[class^="MuiTabs-flexContainer"] {
         justify-content: center;
@@ -47,12 +48,13 @@
       button[class^="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit"] {
         min-height: 37px;
         min-width: 54px;
-        margin: 30px 10px 20px 10px;
+        margin: 30px 10px 0px 10px;
         border-radius: 3px;
 
         span {
           text-transform: capitalize;
-          color: $black-russian;
+          color: $primary-color;
+          background: transparent;
         }
       }
 
@@ -62,10 +64,6 @@
         span {
           font-weight: 600;
         }
-      }
-
-      span[class^="PrivateTabIndicator-root-1 PrivateTabIndicator-colorSecondary-3 MuiTabs-indicator"] {
-        background-color: transparent !important;
       }
     }
 
@@ -80,16 +78,16 @@
         }
 
         .aboutDownloadBtn {
-          padding: 15px 32px;
-          text-transform: capitalize;
           cursor: pointer;
-          background: $black-russian;
           color: $white;
           transition: 0.4s;
           font-size: 14px;
           font-weight: 700;
           border-radius: 6px;
+          padding: 15px 32px;
           letter-spacing: 1px;
+          text-transform: capitalize;
+          background: $primary-color;
           background: linear-gradient(145deg, #ff014f, #d11414);
 
           &:hover {
@@ -114,7 +112,7 @@
         .aboutSkill {
           display: flex;
           align-items: center;
-          color: $black-russian;
+          color: $primary-color;
           padding: 5px 10px;
           margin: {
             bottom: 10px;

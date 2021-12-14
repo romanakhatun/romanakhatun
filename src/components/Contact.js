@@ -1,12 +1,17 @@
 import { BsEmojiSmile } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa";
+import { Container } from "@material-ui/core";
 import { FiLinkedin, FiTwitter } from "react-icons/fi";
+import { GrSend } from "react-icons/gr";
+import { WebsiteName } from "../App";
 import HeroPages from "./HeroPages";
 import styles from "../styles/components/contact.module.scss";
 
 const Contact = ({ homePath }) => {
+  document.title = "Contact | " + WebsiteName;
   const directSendEmail =
     "https://mail.google.com/mail/u/0/?fs=1&to=romanakhatun2004@gmail.com&su=Need+to+disscuss+with+Romana+Khatun&body=Hello,+I+need+to+talk&tf=cm";
+
   return (
     <>
       {homePath ? null : <HeroPages title="Contact" />}
@@ -14,7 +19,7 @@ const Contact = ({ homePath }) => {
         <h1>CONTACT ME</h1>
         <h2> Get in Touch!</h2>
 
-        <div>
+        <Container className={styles.contactDetails}>
           <div className={styles.contactQuick}>
             <img src="/images/map-bg.svg" alt="map-bg" />
 
@@ -89,8 +94,23 @@ const Contact = ({ homePath }) => {
               </div>
             </div>
           </div>
-          <div></div>
-        </div>
+
+          {/* <form className={styles.contactMessageForm}>
+            <label>YOUR NAME</label>
+            <input type="text" name="user_name" />
+            <label>EMAIL</label>
+            <input type="email" name="user_email" />
+            <label>Subject</label>
+            <input type="email" name="user_subject" />
+            <label>YOUR MESSAGE</label>
+            <textarea name="message" />
+            <input
+              className={styles.contactSubmitBtn}
+              type="submit"
+              value={`${(<GrSend />)}Send `}
+            />
+          </form> */}
+        </Container>
       </div>
     </>
   );

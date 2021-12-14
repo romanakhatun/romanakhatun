@@ -3,7 +3,7 @@
 .footer {
   padding: 70px 0px;
   text-align: center;
-  background: $black-russian;
+  background: $primary-color;
 
   .footer_socialIcon {
     display: flex;
@@ -37,7 +37,7 @@
 
         &:hover {
           background: $white;
-          color: $black-russian;
+          color: $primary-color;
         }
       }
     }

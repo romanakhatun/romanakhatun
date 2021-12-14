@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   height: 40vh;
-  background: $black-russian;
+  background: $primary-color;
 
   .heroGlobalBox_details {
     background: $white;
@@ -20,7 +20,7 @@
     border-radius: 0.25rem;
 
     .heroGlobalBox_home {
-      color: $black-russian;
+      color: $primary-color;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -33,7 +33,7 @@
       }
     }
 
-    .slas {
+    .slash {
       color: $gray;
       margin: {
         left: 5px;

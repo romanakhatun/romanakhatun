@@ -1,4 +1,5 @@
 import React from "react";
+import { WebsiteName } from "../App";
 import HeroHome from "../components/HeroHome";
 import About from "../components/About";
 import Portfolio from "../components/Portfolio";
@@ -6,6 +7,8 @@ import HireMe from "../components/HireMe";
 import Contact from "../components/Contact";
 
 const Home = (props) => {
+  document.title = "Web Developer | " + WebsiteName;
+
   const pathName = props.location.pathname;
 
   return (

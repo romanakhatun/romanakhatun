@@ -30,14 +30,14 @@
   padding: 13px 0;
 
   a {
-    color: $black-russian;
+    color: $primary-color;
 
     &:hover::after {
-      background: $black-russian;
+      background: $primary-color;
     }
   }
   .active::after {
-    background: $black-russian;
+    background: $primary-color;
   }
 }
 
