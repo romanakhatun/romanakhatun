@@ -2,7 +2,6 @@
 @import "../variables";
 
 .contact {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,30 +11,17 @@
   padding-bottom: 150px;
 
   h1 {
-    margin: 10px 0;
-    color: $primary-color;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 400;
+    @include heading1;
   }
 
   h2 {
-    text-align: center;
-    font-size: 32px;
-    -webkit-text-stroke: 1px rgb(19, 5, 5);
-    -webkit-text-fill-color: transparent;
-    font-weight: 800;
-    letter-spacing: 0.02em;
+    @include heading2;
   }
 
   .contactDetails {
-    margin-top: 20px;
-    // display: grid;
-    // grid-template-columns: 1fr 3fr;
-
     .contactQuick {
       position: relative;
+      margin-left: 20px;
 
       .contactQuickDetails {
         position: absolute;
@@ -68,7 +54,7 @@
 
         .contactInfo,
         .contactInfo a {
-          font-family: "Poppins", sans-serif;
+          font-family: $font-poppins;
         }
 
         //  ======Common CSS =====
@@ -107,7 +93,7 @@
           p {
             text-transform: uppercase;
             font-size: 14px;
-            padding-bottom: 15px;
+            padding-bottom: 20px;
             padding-top: 25px;
           }
 
@@ -121,10 +107,10 @@
               color: $primary-color;
               border: none;
               cursor: pointer;
-              @include boxShadow($box-shadow-bg1, $box-shadow-bg2);
+              @include boxShadow($gradient-bg1, $gradient-bg2);
 
               &:hover {
-                @include boxShadow(#ff014f, #d11414);
+                @include boxShadow($gradient-bg3, $gradient-bg4);
                 transform: translateY(-5px);
                 color: $white;
               }
@@ -139,12 +125,13 @@
     }
 
     .contactMessageForm {
-      display: inline-flex;
-      flex-direction: column;
+      width: 100%;
       margin-top: 100px;
       padding: 40px 30px;
-      @include boxShadow($box-shadow-bg1, $box-shadow-bg2);
+      border-radius: 6px;
+      @include boxShadow($gradient-bg1, $gradient-bg2);
 
+      // === Common ==
       label {
         font-size: 12px;
         color: #a0a8b3;
@@ -164,11 +151,13 @@
         border: 2px solid #dadada;
         margin-bottom: 15px;
         border-radius: 6px;
-        height: 55px;
         padding: 0 15px;
         font-size: 14px;
         transition: 0.4s;
         letter-spacing: 1px;
+        width: 100%;
+        margin-bottom: 20px;
+        font-family: $font-poppins;
 
         &:focus {
           outline: none;
@@ -176,11 +165,17 @@
         }
       }
 
-      textarea {
-        &:focus {
-          outline: none;
-        }
+      input {
+        height: 55px;
       }
+
+      textarea {
+        min-height: 160px;
+        padding: 10px 15px;
+        line-height: 18px;
+      }
+
+      //===Common ==*
 
       .contactSubmitBtn {
         color: $primary-color;
@@ -189,15 +184,86 @@
         cursor: pointer;
         transition: 0.4s;
         font-size: 14px;
-        font-weight: 700;
+        font-weight: 600;
         border-radius: 6px;
         letter-spacing: 1px;
-        @include boxShadow($box-shadow-bg1, $box-shadow-bg2);
+        text-transform: uppercase;
+        width: 100%;
+        @include boxShadow($gradient-bg1, $gradient-bg2);
 
         &:hover {
-          @include boxShadow(#ff014f, #d11414);
+          @include boxShadow($gradient-bg3, $gradient-bg4);
           transform: translateY(-5px);
           color: $white;
+        }
+      }
+
+      .success,
+      .error {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      .success {
+        color: green;
+      }
+
+      .error {
+        color: red;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $sm) {
+  .contact {
+    .contactDetails {
+      .contactMessageForm {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-column-gap: 20px;
+
+        .name {
+          grid-column: 1 / 7;
+        }
+
+        .subject {
+          grid-column: 7 / 13;
+        }
+
+        .email,
+        .message,
+        .contactSubmitBtn,
+        .error,
+        .success {
+          grid-column: 1 / 13;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: $md) {
+    .contact {
+      .contactDetails {
+        display: grid;
+        grid-template-columns: 3fr 4fr;
+
+        .contactQuick {
+          margin-left: 0px;
+
+          img {
+            width: 80%;
+            height: 60%;
+          }
+
+          .contactQuickDetails {
+            top: 60px;
+          }
+        }
+
+        .contactMessageForm {
+          margin-top: 0px;
         }
       }
     }

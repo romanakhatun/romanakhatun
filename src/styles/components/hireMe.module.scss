@@ -5,7 +5,7 @@
   background: $primary-color;
   text-align: center;
   padding: 3rem 2rem;
-  background-image: linear-gradient(316deg, #d11414 0, #ff014f 74%);
+  background-image: linear-gradient(316deg, $gradient-bg4 0, $gradient-bg3 74%);
   border-radius: 0.35rem;
 
   h2 {

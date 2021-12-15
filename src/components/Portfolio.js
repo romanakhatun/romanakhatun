@@ -1,4 +1,4 @@
-import { Container } from "@material-ui/core";
+import { Button, Container } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { WebsiteName } from "../App";
@@ -28,23 +28,27 @@ const Portfolio = ({ homePath }) => {
                 <p className={styles.portfolioUseTechnology}>
                   {portfolio?.technology}
                 </p>
+
                 <div className={styles.portfolioBtn}>
-                  <a
-                    href={portfolio?.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button className={styles.visitBtn}>
+                  <Button className={styles.previewBtn}>
+                    <a
+                      href={portfolio?.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Preview <MdOutlineKeyboardArrowRight />
-                    </button>
-                  </a>
-                  <a
-                    href={portfolio?.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button className={styles.sourceBtn}>Source</button>
-                  </a>
+                    </a>
+                  </Button>
+
+                  <Button className={styles.sourceBtn}>
+                    <a
+                      href={portfolio?.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Source
+                    </a>
+                  </Button>
                 </div>
               </div>
             );
