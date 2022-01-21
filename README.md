@@ -6,7 +6,7 @@
 - Developer | Programmer | Learner
 - Currently learning everything 🤣
 - Fun fact: Love photography ❤️
-- Any freelance work? 💼 do reach, [Fiverr](https://www.fiverr.com/romana2004) :)
+- Any freelance work? 💼 do reach, <strong>Fiverr</strong> :)
 <br />
 
 ### Languages and Tools:
