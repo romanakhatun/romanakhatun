@@ -88,15 +88,15 @@ const About = ({ homePath }) => {
               <div className={styles.aboutContent}>
                 <p>if you're wondering who I am..</p>
                 <p>
-                  I'm <span className={styles.badge}>Romana Khatun</span>, 17
+                  I'm <span className={styles.badge}>Romana Khatun</span>, 16
                   years old <span className={styles.badge}>web developer</span>{" "}
                   from Bangladesh.
                 </p>
                 <p>
-                  I am a professional front-end developer.I specialize in{" "}
-                  <span className={styles.badge}>JavaScript</span> and have
-                  professional experience working with{" "}
-                  <span className={styles.badge}>React</span>. My specialties
+                  I have been involved with Web Development for 3+ years. I
+                  specialize in <span className={styles.badge}>JavaScript</span>{" "}
+                  and have professional experience working with{" "}
+                  <span className={styles.badge}>React.js</span>. My specialties
                   include problem-solving. With passion and hard work, people
                   can do anything. I am a responsible developer and I can
                   successfully delegate challenging tasks.
@@ -211,10 +211,9 @@ const About = ({ homePath }) => {
                   <h4>Web Developer at Namyata</h4>
                   <p className={styles.badge}>March 2021 - September 2021</p>
                   <p>
-                    I'm working as a web developer at Namyata Company. I'm
-                    working with programming-language React, NextJs, JavaScript,
-                    TypeScript, Sass, Html, CSS, Responsive Design, Re-Design
-                    Website
+                    Worked on programming-language such as Reactjs, Nextjs,
+                    JavaScript, TypeScript, SASS, Responsive Design, Re-design
+                    website
                   </p>
                 </div>
               </div>

@@ -26,7 +26,7 @@ const Header = () => {
           <div className={styles.logo}>
             {navbarActive ? (
               <Link to="/">
-                <img src="images/black-russian-logo.png" alt="logo" />
+                <img src="images/lack-russian-logo.png" alt="logo" />
               </Link>
             ) : (
               <Link to="/">
