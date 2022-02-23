@@ -4,16 +4,16 @@ import { BsEmojiSmile } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa";
 import { FiLinkedin, FiTwitter } from "react-icons/fi";
 import { BsArrowRight } from "react-icons/bs";
-import { WebsiteName } from "../App";
+// import { WebsiteName } from "../App";
 import emailjs from "emailjs-com";
 import HeroPages from "./HeroPages";
 import styles from "../styles/components/contact.module.scss";
 
 const Contact = ({ homePath }) => {
+  // document.title = "Contact | " + WebsiteName;
+
   const [status, setStatus] = useState("");
   const form = useRef();
-
-  document.title = "Contact | " + WebsiteName;
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -56,7 +56,7 @@ const Contact = ({ homePath }) => {
 
         <Container className={styles.contactDetails}>
           <div className={styles.contactQuick}>
-            <img src="/images/map-bg.svg" alt="map-bg" />
+            {/* <img src="/images/map-bg.svg" alt="map-bg" /> */}
 
             <div className={styles.contactQuickDetails}>
               <h3>Quick Contact</h3>

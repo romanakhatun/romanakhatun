@@ -1,13 +1,13 @@
 import { Button, Container } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { WebsiteName } from "../App";
-import data from "../data.json";
+// import { WebsiteName } from "../App";
+import data from "../data";
 import HeroPages from "./HeroPages";
 import styles from "../styles/components/portfolio.module.scss";
 
 const Portfolio = ({ homePath }) => {
-  document.title = "Portfolio | " + WebsiteName;
+  // document.title = "Portfolio | " + WebsiteName;
 
   return (
     <>
@@ -19,7 +19,6 @@ const Portfolio = ({ homePath }) => {
 
         <Container className={styles.portfolioAllWorks}>
           {data.map((portfolio, index) => {
-            console.log(portfolio?.image);
             return (
               <div key={index} className={styles.portfolioWork}>
                 <img src={portfolio.image} alt="project-img" />

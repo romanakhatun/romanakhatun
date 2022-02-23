@@ -26,11 +26,11 @@ const Header = () => {
           <div className={styles.logo}>
             {navbarActive ? (
               <Link to="/">
-                <img src="images/lack-russian-logo.png" alt="logo" />
+                <img src="/images/active-logo.png" alt="logo" />
               </Link>
             ) : (
               <Link to="/">
-                <img src="images/logo.png" alt="logo" />
+                <img src="/images/logo.png" alt="logo" />
               </Link>
             )}
           </div>
@@ -42,17 +42,17 @@ const Header = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink exact activeClassName={styles.active} to="/about">
+              <NavLink activeClassName={styles.active} to="/about">
                 About
               </NavLink>
             </li>
             <li>
-              <NavLink exact activeClassName={styles.active} to="/portfolio">
+              <NavLink activeClassName={styles.active} to="/portfolio">
                 Portfolio
               </NavLink>
             </li>
             <li>
-              <NavLink exact activeClassName={styles.active} to="/contact">
+              <NavLink activeClassName={styles.active} to="/contact">
                 Contact
               </NavLink>
             </li>

@@ -22,9 +22,11 @@
     .contactQuick {
       position: relative;
       margin-left: 20px;
+      background-image: url("../../components/map-bg.svg");
+      background-size: auto;
+      background-repeat: no-repeat;
 
       .contactQuickDetails {
-        position: absolute;
         top: 0;
 
         //   =======Common CSS =====
@@ -253,8 +255,8 @@
           margin-left: 0px;
 
           img {
-            width: 80%;
-            height: 60%;
+            // width: 80%;
+            // height: 60%;
           }
 
           .contactQuickDetails {

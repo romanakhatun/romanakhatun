@@ -25,14 +25,14 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import { WebsiteName } from "../App";
+// import { WebsiteName } from "../App";
 import HeroPages from "./HeroPages";
 import styles from "../styles/components/about.module.scss";
 
 const About = ({ homePath }) => {
-  const [value, setValue] = useState(0);
+  // document.title = WebsiteName;
 
-  document.title = "About | " + WebsiteName;
+  const [value, setValue] = useState(0);
 
   const TabPanel = (props) => {
     const { children, value, index, ...other } = props;
