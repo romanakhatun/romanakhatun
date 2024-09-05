@@ -41,7 +41,7 @@
   <img align="left" alt="Romana Khatun | Twitter" width="26px" src="/assets/twitter.png">
 </a>
 
-<a href="https://www.instagram.com/romanakhatun2004">
+<a href="https://www.instagram.com/romanakhatun_2004">
   <img align="left" alt="Romana Khatun | Instagram" width="26px" src="/assets/instagram.png" />
 </a>
 
