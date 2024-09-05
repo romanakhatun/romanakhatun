@@ -41,6 +41,10 @@
   <img align="left" alt="Romana Khatun | Twitter" width="26px" src="/assets/twitter.png">
 </a>
 
+<a href="https://www.instagram.com/romanakhatun2004">
+  <img align="left" alt="Romana Khatun | Instagram" width="26px" src="/assets/instagram.png" />
+</a>
+
 <a href="mailto:romanakhatun2004@gmail.com">
   <img align="left" alt="Romana Khatun | Gmail" width="26px" src="/assets/gmail.png" />
 </a>
