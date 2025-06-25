@@ -1,15 +1,17 @@
-## Hey there! I'm Romana Khatun and <img align="center" src="https://img.icons8.com/external-kmg-design-flat-kmg-design/32/000000/external-love-valentines-day-kmg-design-flat-kmg-design-1.png"/> code
+## Hi there 👋! I'm Romana Khatun and <img align="center" src="https://img.icons8.com/external-kmg-design-flat-kmg-design/32/000000/external-love-valentines-day-kmg-design-flat-kmg-design-1.png"/> code
 
 
 <p align="center"><img align="center" width="150" height="150" src="/assets/coding.png"></p>
 
-- Developer | Programmer | Learner
-- Currently learning everything 🤣
-- Fun fact: Love photography ❤️
-- Any freelance work? 💼 do reach, <strong>Fiverr</strong> :)
 <br />
 
-### Languages and Tools:
+- 🌱 I’m currently learning **Data Structures and Algorithms (DSA)**
+- 💻 Solving problems on platforms like **LeetCode**, **HackerRank**, and **Codeforces**
+- 📚 I enjoy learning about **problem solving**, **optimization**, and **logic building**
+- 🔭 I’m working on building my **DSA basics**
+- ✍️ I love writing short notes and documenting what I learn
+
+### 🛠️ Languages and Tools:
 
 <p>
   <img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white" />
@@ -30,8 +32,13 @@
 </p>
 <br />
 
-### Connect with me:  
+### 📈 GitHub Stats:
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=romanakhatun&show_icons=true&theme=radical" alt="Romana's GitHub stats"/>
+</p>
+<br />
 
+### 📫 How to reach me: 
 <p>
 <a href="https://www.linkedin.com/in/romanakhatun">
   <img align="left" alt="Romana Khatun | LinkedIn" width="26px" src="/assets/linkedin.png">
@@ -53,3 +60,7 @@
 <br/>
 
 [Read more about me](https://romana-khatun.web.app)
+
+<br/>
+
+> 🚀 "Keep practicing, stay curious, and grow a little every day!"
