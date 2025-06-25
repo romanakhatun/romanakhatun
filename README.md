@@ -11,6 +11,8 @@
 - 🔭 I’m working on building my **DSA basics**
 - ✍️ I love writing short notes and documenting what I learn
 
+<br />
+
 ### 🛠️ Languages and Tools:
 
 <p>
