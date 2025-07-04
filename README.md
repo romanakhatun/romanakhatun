@@ -36,7 +36,8 @@
 
 ### 📈 GitHub Stats:
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=romanakhatun&show_icons=true&theme=radical" alt="Romana's GitHub stats"/>
+  
+  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=romanakhatun&layout=compact&theme=radical)
 </p>
 <br />
 
