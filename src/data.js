@@ -1,7 +1,16 @@
 const data = [
   {
+    name: "Food Review Platform",
+    image: "/images/projects/bite-hub.png",
+    des: "Local Food Lovers Network is a community-driven MERN stack platform where food enthusiasts can share their experiences about local restaurants, street food, or homemade meals.It connects food lovers to explore, review, and celebrate the rich variety of local flavors.",
+    technology:
+      "React.js - JavaScript - Node.js - MongoDB - Express.js - Firebase",
+    link: "https://bitehub2.web.app/",
+    githubLink: "https://github.com/romanakhatun/bitehub-client",
+  },
+  {
     name: "Power x Gym",
-    image: "/images/projects/power-x.png",
+    image: "/images/projects/power-x-gym.png",
     des: "Google Web Fonts Included, Gym Classes Page, Custom CSS Animation, Pricing Page, from this page user can go to payment option, Membership form developed using react form , Integrated Stripe payment system, Fully Responsive",
     technology:
       "React - JavaScript - sass - nodejs - mongodb - heroku - firebase - stripe - google Analytics ",
@@ -9,28 +18,20 @@ const data = [
     githubLink: "https://github.com/romanakhatun/power-x-gym",
   },
   {
-    name: "Red Onion Restaurant ",
-    image: "/images/projects/red-onion.png",
-    des: "Data load from live database, Inventory form to add Food to database, Cart page to manage cart, set payment info and payment, Integrated Stripe payment system",
-    technology: "React - Node - Firebase - Heroku - MongoDB - Stripe",
-    link: "https://red-onion-romana.web.app",
-    githubLink: "https://github.com/romanakhatun/restaurant-client-new",
+    name: "Food Event Management",
+    image: "/images/projects/event-management.png",
+    des: "This is a full-stack Food Event Management website built with Next.js App Router and NextAuth.js, featuring public event listings, protected event management functionalities, and secure authentication using Google OAuth.",
+    technology: "Next.js - Express.js - Firebase - MongoDB",
+    link: "https://event-management-xi-bay.vercel.app/",
+    githubLink: "https://github.com/romanakhatun/event-management",
   },
   {
-    name: "Doctor Portal",
-    image: "/images/projects/doctors-portal.png",
-    des: "Data load from live database, Book Appointment for Patients, Doctors Dashboard to see all Patients, Appointments etc ,Update-able Appointments",
-    technology: "React - Node - Firebase - Heroku - MongoDB",
-    link: "https://doctors-portal-r.firebaseapp.com/",
-    githubLink: "https://github.com/romanakhatun/doctors-portal",
-  },
-  {
-    name: "Quiz App",
-    image: "/images/projects/react-javascript-quiz-app.png",
-    des: "Data Load from opentdb, Select correct answer, Wrong and correct answer will be shown, Correct Score will be show  ",
-    technology: "REACT.js - Javascript - Sass - Api - Netlify",
-    link: "https://react-javascript-quiz-app.netlify.app",
-    githubLink: "https://github.com/romanakhatun/react-javascript-quiz-app",
+    name: "DevFinder",
+    image: "/images/projects/devfinder.png",
+    des: "A GitHub User Search app built with JavaScript. Users can search any GitHub username to view profile information. Includes Dark/Light mode with preferences saved in LocalStorage",
+    technology: "Vanilla Javascript - Firebase -HTML - CSS",
+    link: "https://devfinder-romanakhatun.vercel.app/",
+    githubLink: "https://github.com/romanakhatun/devfinder",
   },
   {
     name: "Brown Girl Book lover",

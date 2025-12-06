@@ -103,7 +103,7 @@ const About = ({ homePath }) => {
                 </p>
 
                 <Button className={styles.aboutDownloadBtn}>
-                  <a href="images/romana-resume.pdf" download>
+                  <a href="images/Romana-Resume.pdf" download>
                     Download my resume
                   </a>{" "}
                   <FiDownloadCloud />

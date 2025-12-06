@@ -1,5 +1,7 @@
-@import "../variables";
-@import "../utilites";
+// @import "../variables";
+// @import "../utilites";
+@use "@/styles/variables" as *;
+@use "@/styles/utilites" as *;
 
 .about {
   display: flex;

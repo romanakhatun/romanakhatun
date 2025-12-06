@@ -1,4 +1,6 @@
-@import "../variables";
+// @import "../variables";
+
+@use "@/styles/variables" as *;
 
 .footer {
   padding: 70px 0px;

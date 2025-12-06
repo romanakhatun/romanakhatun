@@ -1,4 +1,4 @@
-@import "./variables";
+@use "@/styles/variables" as *;
 
 @mixin badge($font-size, $border-radius, $color) {
   font-size: $font-size;

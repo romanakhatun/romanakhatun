@@ -1,6 +1,7 @@
-@import "../utilites";
-@import "../variables";
-
+// @import "../utilites";
+// @import "../variables";
+@use "@/styles/variables" as *;
+@use "@/styles/utilites" as *;
 .contact {
   display: flex;
   flex-direction: column;
