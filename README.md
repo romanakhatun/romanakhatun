@@ -5,10 +5,10 @@
 
 <br />
 
-- 💻 Building full-stack projects using MongoDB, Express.js, React.js, Next.js and Node.js
-- 🔧 Strengthening core backend concepts like API development, authentication, and database design
+- 💻 Building full-stack projects using **MongoDB, Express.js, React.js, Next.js and Node.js**
+- 🔧 Strengthening core backend concepts like **API development**, **authentication**, and **database design**
 - 📚 I enjoy learning about scalable architecture, performance optimization, and clean code practices
-- 🔭 I’m working on improving my Node.js fundamentals and building real-world applications
+- 🔭 I’m working on improving my **Node.js** fundamentals and building real-world applications
 - ✍️ I love writing short notes and documenting everything I learn during development
 
 <br />
