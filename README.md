@@ -5,11 +5,11 @@
 
 <br />
 
-- 🌱 I’m currently learning **Data Structures and Algorithms (DSA)**
-- 💻 Solving problems on platforms like **LeetCode**, **HackerRank**, and **Codeforces**
-- 📚 I enjoy learning about **problem solving**, **optimization**, and **logic building**
-- 🔭 I’m working on building my **DSA basics**
-- ✍️ I love writing short notes and documenting what I learn
+- 💻 Building full-stack projects using MongoDB, Express.js, React.js, Next.js and Node.js
+- 🔧 Strengthening core backend concepts like API development, authentication, and database design
+- 📚 I enjoy learning about scalable architecture, performance optimization, and clean code practices
+- 🔭 I’m working on improving my Node.js fundamentals and building real-world applications
+- ✍️ I love writing short notes and documenting everything I learn during development
 
 <br />
 
