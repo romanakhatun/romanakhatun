@@ -6,8 +6,8 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
 
   const navLinks = [
-    { name: "Projects", href: "projects" },
     { name: "About", href: "about" },
+    { name: "Projects", href: "projects" },
     { name: "Contact", href: "contact" },
   ];
 
@@ -34,9 +34,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="navbar sticky top-6.25 z-50 border border-base-300 bg-base-100 px-8 max-w-3xl mx-auto rounded-[100px]">
+    <div className="fixed top-6 left-1/2 -translate-x-1/2 z-100 navbar border border-base-300 bg-base-100 px-8 max-w-3xl w-[90%] rounded-full shadow-lg">
       <div className="flex-1">
-        <a href="/" className="text-xl font-bold text-primary">
+        <a href="/#home" className="text-xl font-bold text-primary">
           <Logo />
         </a>
       </div>
@@ -45,11 +45,11 @@ const Navbar = () => {
           <li key={link.href}>
             <a
               href={`#${link.href}`}
-              className={
+              className={`text-xs uppercase ${
                 activeSection === link.href
                   ? "text-primary active"
                   : "text-base-content"
-              }
+              }`}
             >
               {link.name}
             </a>

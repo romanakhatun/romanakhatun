@@ -3,55 +3,60 @@ import RomanaAvatar from "../assets/romana-avatar.png";
 import { FiGithub } from "react-icons/fi";
 import { RiTwitterXLine } from "react-icons/ri";
 import { CiGlobe } from "react-icons/ci";
+
+const Social_Links = [
+  {
+    name: "GitHub",
+    icon: <FiGithub size={20} />,
+    href: "https://github.com/yourusername",
+  },
+  {
+    name: "LinkedIn",
+    icon: <LuLinkedin size={20} />,
+    href: "https://linkedin.com/in/yourusername",
+  },
+  {
+    name: "Twitter",
+    icon: <RiTwitterXLine size={20} />,
+    href: "https://x.com/yourusername",
+  },
+  {
+    name: "Website",
+    icon: <CiGlobe size={20} />,
+    href: "https://yourwebsite.com",
+  },
+];
+
 const Home = () => {
   return (
     <div className="section-animation">
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 w-full">
-        <div className="flex-1 w-full space-y-4">
-          <p>Hi, my name is</p>
+        <div className="flex-1 w-full">
+          <p className="text-primary">Hi, my name is</p>
           <h1 className="text-3xl font-bold font-jetBrans">Romana Khatun.</h1>
-          <h2 className="text-xl font-jetBrans">A Full Stack Developer</h2>
-          <p className="max-w-lg">
+          <h2 className="text-xl font-jetBrans">
+            A Full Stack Web Developer...
+          </h2>
+          <p className="max-w-lg my-2">
             Building responsive, high-performance web applications with the
             <span className=""> MERN Stack & Next.js</span>. Specialized in
             creating secure authentication systems, scalable production
             workflows, and clean, maintainable code that delivers seamless user
             experiences.
           </p>
-          {/* Social Icons Container */}
-          <div className="flex items-center gap-3">
-            <a
-              href="#"
-              target="_blank"
-              rel="noreferrer"
-              className="social-icon flex items-center gap-1"
-            >
-              <FiGithub size={20} /> <span>GitHub</span>
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noreferrer"
-              className="social-icon"
-            >
-              <LuLinkedin size={20} />
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noreferrer"
-              className="social-icon"
-            >
-              <RiTwitterXLine size={20} />
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noreferrer"
-              className="social-icon"
-            >
-              <CiGlobe size={20} />
-            </a>
+
+          <div className="flex items-center gap-4 pt-2">
+            {Social_Links.map((social) => (
+              <a
+                key={social.name}
+                href={social.href}
+                target="_blank"
+                rel="noreferrer"
+                className="social-icon"
+              >
+                {social.icon} {social.name}
+              </a>
+            ))}
           </div>
         </div>
 

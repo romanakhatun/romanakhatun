@@ -72,7 +72,6 @@
 }
 
 body {
-  overflow-x: hidden;
   font-family: "Outfit", sans-serif;
 }
 
@@ -82,7 +81,7 @@ body {
 
 @layer components {
   .social-icon {
-    @apply transition-all hover:-translate-y-0.5 text-base-content hover:text-primary border p-1.5 border-base-300 hover:border-primary rounded-sm;
+    @apply transition-all hover:-translate-y-0.5 text-base-content hover:text-primary border py-1.5 px-2.5 border-base-300 hover:border-primary rounded-sm flex items-center gap-1 justify-center;
   }
 }
 
@@ -103,7 +102,7 @@ body {
   filter: blur(165px);
   width: 400px;
   height: 400px;
-  top: -250px;
+  top: -200px;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0.45;
