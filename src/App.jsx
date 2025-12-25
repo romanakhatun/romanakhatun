@@ -1,26 +1,18 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Index from "./components/Index";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Portfolio from "./components/Portfolio";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import "./styles/global.scss";
-
-// export const WebsiteName = "Romana Khatun";
+import Navbar from "./components/Navbar";
+import About from "./sections/About";
+import Home from "./sections/Home";
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Switch>
-        <Route exact path="/" component={Index} />
-        <Route path="/about" component={About} />
-        <Route path="/portfolio" component={Portfolio} />
-        <Route path="/contact" component={Contact} />
-      </Switch>
-      <Footer />
-    </Router>
+    <div className="bg-base-100 min-h-screen relative overflow-x-hidden">
+      <Navbar />
+      <main className="max-w-5xl mx-auto px-6 lg:px-4">
+        <section id="home" className="pt-24 pb-12">
+          <Home />
+        </section>
+        <About />
+      </main>
+    </div>
   );
 }
 

@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Outfit:wght@100..900&display=swap");
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* DARK THEME */
+@plugin "daisyui/theme" {
+  name: "dark";
+  default: true;
+
+  /* The Sky Blue highlight you requested */
+  --color-primary: #38bdf8;
+  --color-primary-content: #0b1120;
+
+  /* Muted slate blue for less prominent items */
+  --color-secondary: #475569;
+  --color-secondary-content: #f8fafc;
+
+  /* Accent highlights */
+  --color-accent: #38bdf8;
+  --color-accent-content: #0b1120;
+
+  --color-neutral: #1e293b;
+  --color-neutral-content: #94a3b8;
+
+  /* Background: Your specific #0b1120 */
+  --color-base-100: #0b1120;
+  --color-base-200: #0f172a;
+  /* Border: Your specific #f8fafc14 (approx hex #1e293b) */
+  --color-base-300: #1e293b;
+
+  /* Paragraph Text: Your specific #94a3b8 */
+  --color-base-content: #94a3b8;
+
+  --color-info: #38bdf8;
+  --color-success: #4ade80;
+  --color-warning: #fbbf24;
+  --color-error: #f87171;
+}
+
+/* LIGHT THEME */
+@plugin "daisyui/theme" {
+  name: "light";
+
+  /* High-contrast blue for buttons and primary actions */
+  --color-primary: #0284c7;
+  --color-primary-content: #ffffff;
+
+  /* Soft slate for secondary elements */
+  --color-secondary: #64748b;
+  --color-secondary-content: #ffffff;
+
+  /* Your sky blue highlight color */
+  --color-accent: #38bdf8;
+  --color-accent-content: #0b1120;
+
+  --color-neutral: #1e293b;
+  --color-neutral-content: #ffffff;
+
+  /* Backgrounds: Pure white to light grey */
+  --color-base-100: #ffffff; /* Main Background */
+  --color-base-200: #f8fafc; /* Subtle sections */
+  --color-base-300: #e5e7eb; /* Borders/Dividers #e2e8f0*/
+
+  /* Text: Dark slate for readability (#475569) */
+  --color-base-content: #475569;
+
+  --color-info: #0ea5e9;
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Outfit", sans-serif;
+}
+
+.font-jetBrans {
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+@layer components {
+  .social-icon {
+    @apply transition-all hover:-translate-y-0.5 text-base-content hover:text-primary border p-1.5 border-base-300 hover:border-primary rounded-sm;
+  }
+}
+
+.section-animation {
+  position: relative;
+  isolation: isolate;
+}
+
+.section-animation::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    87.03deg,
+    #756af6 16.38%,
+    #cc7dda 57.23%,
+    #f6be85 97.64%
+  );
+  filter: blur(165px);
+  width: 400px;
+  height: 400px;
+  top: -250px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.45;
+  z-index: -1;
+  pointer-events: none;
+  animation: circleAnim 10s infinite linear;
+}
+
+@keyframes circleAnim {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
