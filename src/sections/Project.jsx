@@ -1,7 +1,8 @@
 import ProjectCard from "../components/ProjectCard";
-import ProjectCard2 from "../components/ProjectCard2";
+import ArchivedProjectCard from "../components/ArchivedProjectCard";
 import SectionTitle from "../components/SectionTitle";
 import { projects } from "../data/projects";
+import { archivedProject } from "../data/archivedProjects";
 
 const Projects = () => {
   return (
@@ -12,9 +13,15 @@ const Projects = () => {
         <ProjectCard key={project.id} project={project} index={index} />
       ))}
 
-      {projects.map((project, index) => (
-        <ProjectCard2 key={project.id} project={project} index={index} />
-      ))}
+      <div className="grid grid-cols-1 lg:grid-cols-2  gap-3 mb-32 ">
+        {archivedProject.map((archivedProject, index) => (
+          <ArchivedProjectCard
+            key={archivedProject.id}
+            project={archivedProject}
+            index={index}
+          />
+        ))}
+      </div>
 
       {/* Decorative End-of-Section Element */}
       <div className="flex justify-center mt-10">

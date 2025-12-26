@@ -1,4 +1,5 @@
 import EventManagement from "../assets/projects/event-management.png";
+
 export const projects = [
   {
     id: 1,
@@ -21,7 +22,6 @@ export const projects = [
     githubClient: "https://github.com/romanakhatun/textilia-client",
     githubServer: "https://github.com/romanakhatun/textilia-server",
     projectImage: EventManagement,
-    large: true,
   },
   {
     id: 2,
@@ -38,10 +38,9 @@ export const projects = [
       "RESTful API",
     ],
     liveLink: "https://bitehub-live-site.web.app",
-    githubClient: "https://github.com/romanakhatun/bitehub-client", // Replace
-    githubServer: "https://github.com/romanakhatun/bitehub-server", // Replace
-    projectImage: EventManagement, // Replace with your image
-    large: false, // For Bento Grid layout
+    githubClient: "https://github.com/romanakhatun/bitehub-client",
+    githubServer: "https://github.com/romanakhatun/bitehub-server",
+    projectImage: EventManagement,
   },
   {
     id: 3,
@@ -60,7 +59,6 @@ export const projects = [
     liveLink: "https://dishvent-live-site.web.app", // Replace with actual live link
     githubClient: "https://github.com/romanakhatun/dishvent", // Assuming client/server in one repo for Next.js
     githubServer: null, // No separate server repo for Next.js
-    projectImage: EventManagement, // Replace with your image
-    large: false, // For Bento Grid layout
+    projectImage: EventManagement,
   },
 ];

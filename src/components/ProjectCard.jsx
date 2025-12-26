@@ -1,92 +1,125 @@
 import {
   FiArrowRight,
-  FiArrowUpRight,
-  FiGithub,
-  FiLayers,
+  FiServer,
+  FiLayout,
+  FiExternalLink,
 } from "react-icons/fi";
 
 const ProjectCard = ({ project, index }) => {
   const isEven = index % 2 === 0;
 
   return (
-    <div className="relative group flex flex-col justify-center py-20 border-b border-white/5 last:border-0">
+    <div className="relative group flex flex-col justify-center py-10 border-b border-white/5 last:border-0">
+      {/* Background Index Number */}
       <div
-        className={`absolute top-10 font-black text-[15vw] leading-none text-white/[0.02] select-none pointer-events-none
+        className={`absolute top-10 font-black text-[15vw] leading-none text-white/2 select-none pointer-events-none transition-all duration-700 group-hover:text-primary/3
         ${isEven ? "right-0" : "left-0"}`}
       >
         0{index + 1}
       </div>
 
+      {/* Changed to 5/12 and 7/12 split to reduce image width */}
       <div
-        className={`flex flex-col lg:flex-row items-center gap-12 lg:gap-24 
-        ${isEven ? "lg:flex-row" : "lg:flex-row-reverse"}`}
+        className={`flex flex-col lg:grid lg:grid-cols-12 items-center gap-12 lg:gap-16 
+        ${isEven ? "" : "direction-rtl"}`}
       >
-        <div className="w-full lg:w-1/3 space-y-8 z-10">
-          {/* <div className="flex items-center gap-3 mb-4">
-              <FiLayers className="text-primary animate-pulse" />
-              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary">
-                Featured Case Study
-              </span>
-            </div> */}
+        {/* Content Area (5 Columns) */}
+        <div
+          className={`w-full lg:col-span-6 space-y-6 z-10 ${
+            isEven ? "lg:order-1" : "lg:order-2"
+          }`}
+        >
+          <div className="space-y-2">
+            <h3 className="font-title text-3xl md:text-5xl font-black text-white uppercase tracking-tighter">
+              {project.title}
+            </h3>
+            <p className="text-primary font-body text-xs font-bold uppercase tracking-[0.4em] ml-1">
+              {project.subtitle}
+            </p>
+          </div>
 
-          <h3 className="font-title text-3xl md:text-4xl font-black text-white uppercase tracking-tighter mb-4">
-            {project.title}
-          </h3>
-
-          <p className="text-primary font-body text-xs font-bold uppercase tracking-[0.4em] ml-1">
-            {project.subtitle}
-          </p>
-
-          <p className="font-body text-base-content/60 text-sm md:text-base leading-relaxed max-w-sm">
+          <p className="font-body text-base-content/60 text-sm leading-relaxed max-w-md">
             {project.description}
           </p>
 
-          <div className="flex flex-wrap gap-2 mb-8">
+          {/* Tech Stack Pills */}
+          <div className="flex flex-wrap gap-2">
             {project.techStack.map((tech) => (
               <span
                 key={tech}
-                className="text-[10px] font-bold px-3 py-1 rounded-full bg-base-300/50 border border-white/5 text-base-content/60 group-hover:text-primary transition-colors"
+                className="text-[10px] font-bold px-3 py-1 rounded-md bg-base-300/30 border border-white/5 text-base-content/50 group-hover:text-primary group-hover:border-primary/30 transition-all"
               >
                 {tech}
               </span>
             ))}
           </div>
 
-          <div className="flex items-center gap-8 pt-6">
+          {/* Action Links: Integrated Client & Server Links */}
+          <div className="flex flex-wrap items-center gap-6 pt-6">
+            {/* Live Link Button */}
             <a
               href={project.liveLink}
-              className="text-[10px] font-bold uppercase tracking-widest text-neutral flex items-center gap-2 group/link"
+              target="_blank"
+              className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-white hover:text-primary transition-all group/link"
             >
-              View Live{" "}
-              <FiArrowRight className="group-hover/link:translate-x-1 transition-transform" />
+              Live Preview{" "}
+              <FiExternalLink className="group-hover/link:-translate-y-1 group-hover/link:translate-x-1 transition-transform" />
             </a>
 
-            <a
-              href={project.githubClient}
-              className="text-base-content/40 hover:text-white transition-colors"
-            >
-              <FiGithub size={24} />
-            </a>
+            {/* GitHub Links Group */}
+            <div className="flex items-center gap-4">
+              <a
+                href={project.githubClient}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 text-base-content hover:text-white transition-colors group/link"
+                title="Client Side Code"
+              >
+                <FiLayout size={18} className="group-hover/link:text-primary" />
+                <span className="text-[10px] font-bold uppercase tracking-widest">
+                  Client
+                </span>
+              </a>
+
+              {project.githubServer && (
+                <a
+                  href={project.githubServer}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-2 text-base-content hover:text-white transition-colors group/link"
+                  title="Server Side Code"
+                >
+                  <FiServer
+                    size={18}
+                    className="group-hover/link:text-primary"
+                  />
+                  <span className="text-[10px] font-bold uppercase tracking-widest">
+                    Server
+                  </span>
+                </a>
+              )}
+            </div>
           </div>
         </div>
 
-        {/* 3. The Visual Stage (70% Width) */}
-        <div className="w-full lg:w-2/3 relative group">
-          <div className="relative aspect-[16/10] rounded-sm overflow-hidden bg-base-300">
-            {/* Image with subtle zoom/parallax effect */}
+        {/* 2. Visual Stage (7 Columns - Reduced Width) */}
+        <div
+          className={`w-full lg:col-span-6 relative group/img ${
+            isEven ? "lg:order-2" : "lg:order-1"
+          }`}
+        >
+          <div className="relative aspect-[16/9] rounded-sm overflow-hidden bg-base-300 shadow-2xl">
             <img
               src={project.projectImage}
               alt={project.title}
-              className="w-full h-full object-cover grayscale group-hover:grayscale-0 scale-110 group-hover:scale-100 transition-all duration-1000 ease-out"
+              className="w-full h-full object-cover grayscale group-hover/img:grayscale-0 scale-105 group-hover/img:scale-100 transition-all duration-1000 ease-out"
             />
-
-            {/* Color Flash Overlay on Hover */}
-            <div className="absolute inset-0 bg-primary/20 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+            <div className="absolute inset-0 bg-primary/10 mix-blend-multiply opacity-40 group-hover/img:opacity-0 transition-opacity duration-700"></div>
           </div>
 
-          {/* Decorative Corner accents */}
-          <div className="absolute -top-4 -right-4 w-24 h-24 border-t-2 border-r-2 border-primary/30 group-hover:border-primary transition-colors duration-500"></div>
-          <div className="absolute -bottom-4 -left-4 w-24 h-24 border-b-2 border-l-2 border-primary/30 group-hover:border-primary transition-colors duration-500"></div>
+          {/* Corner Accents - Responsive size */}
+          <div className="absolute -top-3 -right-3 w-16 h-16 border-t border-r border-primary/30 group-hover/img:border-primary transition-colors duration-500"></div>
+          <div className="absolute -bottom-3 -left-3 w-16 h-16 border-b border-l border-primary/30 group-hover/img:border-primary transition-colors duration-500"></div>
         </div>
       </div>
     </div>

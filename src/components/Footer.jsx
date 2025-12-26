@@ -40,7 +40,7 @@ const Footer = () => {
 
           <button
             onClick={scrollToTop}
-            className="group flex items-center gap-2 font-body text-[10px] uppercase tracking-[0.2em] text-primary hover:text-neutral transition-colors"
+            className="group flex items-center gap-2 font-body text-[10px] uppercase tracking-[0.2em] text-primary hover:text-neutral transition-colors cursor-pointer"
           >
             Back to top
             <FiArrowUp
