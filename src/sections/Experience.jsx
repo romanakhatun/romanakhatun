@@ -17,8 +17,8 @@ const Experience = () => {
   ];
 
   return (
-    <>
-      <SectionTitle title1="Work" title2="History" sectionNumber="2" />
+    <section id="experience" className="pt-35">
+      <SectionTitle title1="Work" title2="History" sectionNumber="3" />
 
       <div className="mt-12 max-w-4xl">
         {experiences.map((exp, index) => (
@@ -94,7 +94,7 @@ const Experience = () => {
           </div>
         ))}
       </div>
-    </>
+    </section>
   );
 };
 

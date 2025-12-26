@@ -1,4 +1,5 @@
 import { FiGithub, FiLinkedin, FiTwitter, FiArrowUp } from "react-icons/fi";
+import SocialIcon from "./SocialIcon";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -27,28 +28,7 @@ const Footer = () => {
 
           {/* Social Links */}
           <div className="flex items-center gap-4">
-            <a
-              href="https://github.com/romanakhatun"
-              target="_blank"
-              rel="noreferrer"
-              className="w-12 h-12 rounded-xl border border-base-300 flex items-center justify-center text-base-content hover:border-primary hover:text-primary transition-all duration-300"
-            >
-              <FiGithub size={20} />
-            </a>
-            <a
-              href="https://linkedin.com/in/romanakhatun"
-              target="_blank"
-              rel="noreferrer"
-              className="w-12 h-12 rounded-xl border border-base-300 flex items-center justify-center text-base-content hover:border-primary hover:text-primary transition-all duration-300"
-            >
-              <FiLinkedin size={20} />
-            </a>
-            <a
-              href="#"
-              className="w-12 h-12 rounded-xl border border-base-300 flex items-center justify-center text-base-content hover:border-primary hover:text-primary transition-all duration-300"
-            >
-              <FiTwitter size={20} />
-            </a>
+            <SocialIcon />
           </div>
         </div>
 
@@ -60,7 +40,7 @@ const Footer = () => {
 
           <button
             onClick={scrollToTop}
-            className="group flex items-center gap-2 font-body text-[10px] uppercase tracking-[0.2em] text-primary hover:text-white transition-colors"
+            className="group flex items-center gap-2 font-body text-[10px] uppercase tracking-[0.2em] text-primary hover:text-neutral transition-colors"
           >
             Back to top
             <FiArrowUp

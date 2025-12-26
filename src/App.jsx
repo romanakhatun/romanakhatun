@@ -4,8 +4,7 @@ import About from "./sections/About";
 import Contact from "./sections/Contact";
 import Experience from "./sections/Experience";
 import Home from "./sections/Home";
-import Projects2 from "./sections/Porject2";
-import Projects from "./sections/Projects";
+import Projects from "./sections/Project";
 import Skills from "./sections/Skills";
 
 function App() {
@@ -14,26 +13,12 @@ function App() {
       <Navbar />
       <main className="relative overflow-x-hidden">
         <div className="max-w-4xl mx-auto px-6 lg:px-4">
-          <section id="home" className="pt-37 pb-35">
-            <Home />
-          </section>
-
-          {/* About Section */}
-          <section id="about">
-            <About />
-          </section>
+          <Home />
+          <About />
           <Skills />
-
-          {/* Projects Section */}
-          {/* <section id="projects" className="py-30"> */}
-          <Projects2 />
-          {/* </section> */}
-          <section id="experience" className="">
-            <Experience />
-          </section>
-          <section id="contact">
-            <Contact />
-          </section>
+          <Projects />
+          <Experience />
+          <Contact />
         </div>
         <Footer />
       </main>

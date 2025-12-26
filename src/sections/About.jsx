@@ -1,17 +1,13 @@
-import { FiArrowRight, FiDownload } from "react-icons/fi";
+import { FiDownload } from "react-icons/fi";
 import SectionTitle from "../components/SectionTitle";
 
 const About = () => {
   return (
-    <div>
-      <SectionTitle
-        title1="ABOUT "
-        title2="mE"
-        sectionNumber="1"
-      ></SectionTitle>
+    <section id="about" className="pt-35">
+      <SectionTitle title1="ABOUT " title2="ME" sectionNumber="1" />
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-        {/* Left Side: The Narrative */}
+        {/* The Narrative */}
         <div className="lg:col-span-7 space-y-6">
           <h3 className="font-title text-2xl text-neutral font-bold leading-tight uppercase tracking-tight">
             Bridging the gap between{" "}
@@ -177,7 +173,7 @@ const About = () => {
           </div>
         </div> */}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -44,8 +44,8 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="pt-24">
-      <SectionTitle title1="Technical" title2="Expertise" sectionNumber="3" />
+    <section id="skills" className="pt-35">
+      <SectionTitle title1="Technical" title2="Expertise" sectionNumber="2" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
         {skillCategories.map((category, index) => (
@@ -58,7 +58,7 @@ const Skills = () => {
               className={`absolute -right-10 -top-10 w-32 h-32 bg-gradient-to-br ${category.accent} opacity-5 blur-3xl group-hover:opacity-20 transition-opacity duration-500`}
             ></div>
 
-            <h3 className="font-title text-xl text-white font-bold mb-6 uppercase tracking-tight flex items-center gap-3">
+            <h3 className="font-title text-xl text-neutral font-bold mb-6 uppercase tracking-tight flex items-center gap-3">
               <span className="w-1.5 h-6 bg-primary rounded-full"></span>
               {category.title}
             </h3>
@@ -81,8 +81,8 @@ const Skills = () => {
       <div className="mt-12 p-8 rounded-2xl bg-base-300/30 border border-dashed border-base-300 flex flex-col md:flex-row items-center justify-center gap-6 text-center">
         <p className="font-body text-sm text-base-content/60">
           Actively working with{" "}
-          <span className="text-white font-bold">Modern Web Standards</span> and{" "}
-          <span className="text-white font-bold">Best Practices</span> for
+          <span className="text-neutral font-bold">Modern Web Standards</span>{" "}
+          and <span className="text-neutral font-bold">Best Practices</span> for
           clean, maintainable code.
         </p>
       </div>
