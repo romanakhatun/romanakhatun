@@ -107,7 +107,7 @@ const About = () => {
             </ul>
 
             {/* CTA button */}
-            <button className="flex items-center justify-center mt-8 w-full py-3 rounded-xl bg-base-300 hover:bg-primary hover:text-white gap-1 transition-all duration-300 cursor-pointer text-xs uppercase tracking-widest font-bold border border-white/5">
+            <button className="flex items-center justify-center mt-8 w-full py-3 rounded-xl bg-base-300 hover:bg-primary hover:text-neutral gap-1 transition-all duration-300 cursor-pointer text-xs uppercase tracking-widest font-bold border border-white/5">
               <FiDownload size={16} className="animate-bounce" />
               Download Resume
             </button>
@@ -129,7 +129,7 @@ const About = () => {
                   <p className="text-[10px] uppercase tracking-widest text-base-content/50 font-bold mb-1">
                     Education
                   </p>
-                  <p className="text-white text-sm font-semibold">
+                  <p className="text-neutral text-sm font-semibold">
                     B.Sc. in Computer Science
                   </p>
                   <p className="text-base-content/60 text-xs mt-0.5">
@@ -144,7 +144,7 @@ const About = () => {
                   <p className="text-[10px] uppercase tracking-widest text-base-content/50 font-bold mb-1">
                     Expertise
                   </p>
-                  <p className="text-white text-sm font-semibold">
+                  <p className="text-neutral text-sm font-semibold">
                     Full Stack Architecture
                   </p>
                   <p className="text-base-content/60 text-xs mt-0.5">
@@ -159,7 +159,7 @@ const About = () => {
                   <p className="text-[10px] uppercase tracking-widest text-base-content/50 font-bold mb-1">
                     Location
                   </p>
-                  <p className="text-white text-sm font-semibold">Bangladesh</p>
+                  <p className="text-neutral text-sm font-semibold">Bangladesh</p>
                   <p className="text-base-content/60 text-xs mt-0.5">
                     Available for Global Remote Work
                   </p>
@@ -169,7 +169,7 @@ const About = () => {
 
             <a
               href="/resume.pdf"
-              className="mt-10 group flex items-center justify-center gap-3 w-full py-4 rounded-2xl bg-white text-slate-900 font-bold text-xs uppercase tracking-widest transition-all hover:bg-primary hover:text-white"
+              className="mt-10 group flex items-center justify-center gap-3 w-full py-4 rounded-2xl bg-white text-slate-900 font-bold text-xs uppercase tracking-widest transition-all hover:bg-primary hover:text-neutral"
             >
               <FiDownload size={16} className="group-hover:animate-bounce" />
               Download

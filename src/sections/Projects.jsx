@@ -11,7 +11,7 @@ const Projects = () => {
       ></SectionTitle>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="glass-card p-8">
-          <h3 className="font-title text-2xl text-white mb-2 uppercase">
+          <h3 className="font-title text-2xl text-neutral mb-2 uppercase">
             Textilia
           </h3>
           <p className="font-body text-sm text-base-content mb-4">
