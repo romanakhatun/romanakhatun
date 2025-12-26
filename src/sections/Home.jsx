@@ -33,8 +33,8 @@ const Home = () => {
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 w-full">
         <div className="flex-1 w-full">
           <p className="text-primary">Hi, my name is</p>
-          <h1 className="text-3xl font-bold font-jetBrans">Romana Khatun.</h1>
-          <h2 className="text-xl font-jetBrans">
+          <h1 className="text-3xl font-bold font-bricolage">Romana Khatun.</h1>
+          <h2 className="text-xl font-bricolage">
             A Full Stack Web Developer...
           </h2>
           <p className="max-w-lg my-2">

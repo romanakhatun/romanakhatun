@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
 import Home from "./sections/Home";
+import Projects from "./sections/Projects";
 
 function App() {
   return (
@@ -11,7 +12,16 @@ function App() {
           <section id="home" className="pt-35 pb-12">
             <Home />
           </section>
-          <About />
+
+          {/* About Section */}
+          <section id="about" className="py-30">
+            <About />
+          </section>
+
+          {/* Projects Section */}
+          <section id="projects" className="pb-30">
+            <Projects />
+          </section>
         </div>
       </main>
     </div>

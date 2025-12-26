@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Outfit:wght@100..900&display=swap");
 
 @import "tailwindcss";
 @plugin "daisyui";
@@ -20,7 +20,7 @@
   --color-accent: #38bdf8;
   --color-accent-content: #0b1120;
 
-  --color-neutral: #1e293b;
+  --color-neutral: white;
   --color-neutral-content: #94a3b8;
 
   /* Background: Your specific #0b1120 */
@@ -54,7 +54,7 @@
   --color-accent: #38bdf8;
   --color-accent-content: #0b1120;
 
-  --color-neutral: #1e293b;
+  --color-neutral: black;
   --color-neutral-content: #ffffff;
 
   /* Backgrounds: Pure white to light grey */
@@ -75,13 +75,34 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
-.font-jetBrans {
+.font-bricolage {
   font-family: "Bricolage Grotesque", sans-serif;
 }
+/* .font-title {
+  font-family: "Bricolage Grotesque", sans-serif;
+} */
 
 @layer components {
   .social-icon {
     @apply transition-all hover:-translate-y-0.5 text-base-content hover:text-primary border py-1.5 px-2.5 border-base-300 hover:border-primary rounded-sm flex items-center gap-1 justify-center;
+  }
+  .glass-card {
+    @apply relative overflow-hidden rounded-2xl border border-base-300 bg-base-100/40 backdrop-blur-md 
+           transition-all duration-500 ease-out;
+  }
+
+  .glass-card:hover {
+    @apply border-primary/50 -translate-y-2 shadow-[0_20px_40px_rgba(56,189,248,0.1)];
+  }
+
+  /* Subtle inner light effect */
+  .glass-card::before {
+    content: "";
+    @apply absolute inset-0 bg-linear-to-br from-white/5 to-transparent opacity-0 transition-opacity duration-500;
+  }
+
+  .glass-card:hover::before {
+    @apply opacity-100;
   }
 }
 
