@@ -1,36 +1,34 @@
-import {
-  FiArrowRight,
-  FiServer,
-  FiLayout,
-  FiExternalLink,
-} from "react-icons/fi";
+import { FiServer, FiLayout, FiExternalLink } from "react-icons/fi";
 
 const ProjectCard = ({ project, index }) => {
   const isEven = index % 2 === 0;
 
   return (
-    <div className="relative group flex flex-col justify-center py-10 border-b border-white/5 last:border-0">
+    <div
+      className={`relative group flex flex-col justify-center ${
+        index === 0 ? "pt-0 pb-10" : "py-10"
+      }  border-b border-white/5 last:border-0`}
+    >
       {/* Background Index Number */}
       <div
-        className={`absolute top-10 font-black text-[15vw] leading-none text-white/2 select-none pointer-events-none transition-all duration-700 group-hover:text-primary/3
+        className={`absolute top-1 font-black text-[15vw] leading-none text-white/2 select-none pointer-events-none transition-all duration-700 group-hover:text-primary/3
         ${isEven ? "right-0" : "left-0"}`}
       >
         0{index + 1}
       </div>
 
-      {/* Changed to 5/12 and 7/12 split to reduce image width */}
       <div
         className={`flex flex-col lg:grid lg:grid-cols-12 items-center gap-12 lg:gap-16 
         ${isEven ? "" : "direction-rtl"}`}
       >
-        {/* Content Area (5 Columns) */}
+        {/* Content Area */}
         <div
           className={`w-full lg:col-span-6 space-y-6 z-10 ${
             isEven ? "lg:order-1" : "lg:order-2"
           }`}
         >
           <div className="space-y-2">
-            <h3 className="font-title text-3xl md:text-5xl font-black text-white uppercase tracking-tighter">
+            <h3 className="font-title text-3xl md:text-4xl font-black text-white uppercase">
               {project.title}
             </h3>
             <p className="text-primary font-body text-xs font-bold uppercase tracking-[0.4em] ml-1">
@@ -47,14 +45,13 @@ const ProjectCard = ({ project, index }) => {
             {project.techStack.map((tech) => (
               <span
                 key={tech}
-                className="text-[10px] font-bold px-3 py-1 rounded-md bg-base-300/30 border border-white/5 text-base-content/50 group-hover:text-primary group-hover:border-primary/30 transition-all"
+                className="text-[10px] font-bold px-3 py-1 rounded-md bg-base-300/30 border text-primary border-primary/30 transition-all"
               >
                 {tech}
               </span>
             ))}
           </div>
 
-          {/* Action Links: Integrated Client & Server Links */}
           <div className="flex flex-wrap items-center gap-6 pt-6">
             {/* Live Link Button */}
             <a
@@ -102,13 +99,13 @@ const ProjectCard = ({ project, index }) => {
           </div>
         </div>
 
-        {/* 2. Visual Stage (7 Columns - Reduced Width) */}
+        {/*  Visual Stage */}
         <div
           className={`w-full lg:col-span-6 relative group/img ${
             isEven ? "lg:order-2" : "lg:order-1"
           }`}
         >
-          <div className="relative aspect-[16/9] rounded-sm overflow-hidden bg-base-300 shadow-2xl">
+          <div className="relative aspect-video rounded-sm overflow-hidden bg-base-300 shadow-2xl">
             <img
               src={project.projectImage}
               alt={project.title}

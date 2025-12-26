@@ -55,7 +55,7 @@ const Skills = () => {
           >
             {/* Subtle corner glow */}
             <div
-              className={`absolute -right-10 -top-10 w-32 h-32 bg-gradient-to-br ${category.accent} opacity-5 blur-3xl group-hover:opacity-20 transition-opacity duration-500`}
+              className={`absolute -right-10 -top-10 w-32 h-32 bg-linear-to-br ${category.accent} opacity-5 blur-3xl group-hover:opacity-20 transition-opacity duration-500`}
             ></div>
 
             <h3 className="font-title text-xl text-neutral font-bold mb-6 uppercase tracking-tight flex items-center gap-3">
@@ -67,7 +67,7 @@ const Skills = () => {
               {category.skills.map((skill) => (
                 <div
                   key={skill}
-                  className="px-4 py-2 rounded-xl bg-base-200 border border-white/5 text-base-content/80 text-sm font-body font-medium transition-all duration-300 hover:bg-base-300 hover:text-primary hover:border-primary/30"
+                  className="px-4 py-2 rounded-xl bg-base-200 border border-base-300 text-base-content/80 text-sm font-body font-medium transition-all duration-300 hover:bg-base-300 hover:text-primary hover:border-primary/30"
                 >
                   {skill}
                 </div>

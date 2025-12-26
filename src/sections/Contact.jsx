@@ -88,7 +88,7 @@ const Contact = () => {
         </div>
         <a
           href="tel:+8801796953902"
-          className="px-8 py-4 rounded-full bg-primary text-neutral font-body font-black uppercase text-xs tracking-[0.2em] shadow-[0_0_20px_rgba(56,189,248,0.3)] hover:shadow-primary/50 transition-all active:scale-95"
+          className="px-8 py-4 rounded-full bg-primary text-neutral font-body font-black uppercase text-xs tracking-[0.2em] shadow-[0_0_20px_rgba(56,189,248,0.1)] hover:shadow-primary/20 transition-all active:scale-95"
         >
           Call Me Now
         </a>

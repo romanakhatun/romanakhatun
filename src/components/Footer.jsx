@@ -1,4 +1,4 @@
-import { FiGithub, FiLinkedin, FiTwitter, FiArrowUp } from "react-icons/fi";
+import { FiArrowUp } from "react-icons/fi";
 import SocialIcon from "./SocialIcon";
 
 const Footer = () => {
@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className="relative border-t border-base-300 bg-base-100/50 backdrop-blur-md pt-16 pb-8">
       {/* Background Subtle Glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-linear-to-r from-transparent via-primary/50 to-transparent"></div>
 
       <div className="max-w-5xl mx-auto px-6 lg:px-4">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
@@ -20,7 +20,7 @@ const Footer = () => {
             <h2 className="font-title text-2xl font-black text-neutral uppercase tracking-tighter">
               Romana <span className="text-primary italic">Khatun</span>
             </h2>
-            <p className="font-body text-sm text-base-content/60 max-w-[280px] leading-relaxed">
+            <p className="font-body text-sm text-base-content/60 max-w-70 leading-relaxed">
               MERN Stack Developer specializing in high-performance web
               applications and seamless user experiences.
             </p>
@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5 gap-4">
+        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-base-300 gap-4">
           <p className="font-body text-[10px] uppercase tracking-[0.2em] text-base-content/40">
             © {currentYear} • Built with React & Tailwind by Romana
           </p>

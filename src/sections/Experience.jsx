@@ -27,7 +27,7 @@ const Experience = () => {
             <div className="absolute left-0 top-0 bottom-0 w-px bg-base-300 group-hover:bg-primary/50 transition-colors duration-500"></div>
 
             {/* The Node */}
-            <div className="absolute left-[-4px] top-2 w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_#38bdf8] group-hover:scale-150 transition-transform duration-300"></div>
+            <div className="absolute -left-1 top-2 w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_#38bdf8] group-hover:scale-150 transition-transform duration-300"></div>
 
             {/* Experience Card */}
             <div className="relative p-6 md:p-8 rounded-2xl border border-base-300 bg-base-100/40 backdrop-blur-md hover:border-primary/30 transition-all duration-500 mb-10">
