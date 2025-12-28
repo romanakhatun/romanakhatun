@@ -18,7 +18,7 @@ const Experience = () => {
 
   return (
     <section id="experience" className="pt-35">
-      <SectionTitle title1="Work" title2="History" sectionNumber="3" />
+      <SectionTitle title1="Work " title2="History" sectionNumber="3" />
 
       <div className="mt-12 max-w-4xl">
         {experiences.map((exp, index) => (

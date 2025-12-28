@@ -18,7 +18,7 @@ const Projects = () => {
   return (
     <section id="projects" className="pt-32 max-w-7xl mx-auto px-6">
       {/* Main Title */}
-      <SectionTitle title1="Featured" title2="Works" sectionNumber="3" />
+      <SectionTitle title1="Featured " title2="Works" sectionNumber="3" />
 
       {/* Featured Projects*/}
       <div>

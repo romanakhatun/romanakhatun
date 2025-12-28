@@ -13,6 +13,9 @@ const Logo = () => {
         src={theme === "dark" ? WhiteLogo : BlackLogo}
         alt="Romana Logo"
       />
+      {/* <h1 className="text-xl font-bold text-neutral font-zen-dots tracking-wider">
+        Romana
+      </h1> */}
     </div>
   );
 };

@@ -29,7 +29,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-24">
-      <SectionTitle title1="Get In" title2="Touch" sectionNumber="4" />
+      <SectionTitle title1="Get In " title2="Touch" sectionNumber="4" />
 
       <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Email Card */}

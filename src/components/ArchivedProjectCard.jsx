@@ -3,7 +3,7 @@ import { FiGithub, FiExternalLink, FiFolder } from "react-icons/fi";
 const ArchivedProjectCard = ({ project }) => {
   return (
     <div className="group relative h-full">
-      <div className="relative h-full flex flex-col p-6 md:p-7 rounded-2xl border border-white/5 backdrop-blur-xl shadow-2xl transition-all duration-500 hover:border-primary/40">
+      <div className="relative h-full flex flex-col p-6 md:p-7 rounded-2xl border border-white/5 backdrop-blur-xl shadow-2xl transition-all duration-500 hover:border-primary/40 hover:-translate-y-1 bg">
         {/* Folder Icon and Links */}
         <div className="flex items-center justify-between mb-5">
           <div className="w-12 h-12 rounded-2xl bg-base-300/50 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-500">
@@ -14,7 +14,7 @@ const ArchivedProjectCard = ({ project }) => {
               href={project.githubClient}
               target="_blank"
               rel="noreferrer"
-              className="hover:text-white transition-colors"
+              className="hover:text-neutral transition-colors"
               title="View Source"
             >
               <FiGithub size={20} />
@@ -43,7 +43,7 @@ const ArchivedProjectCard = ({ project }) => {
         </div>
 
         {/*  Tech Stack with Mini-Tag Style */}
-        <div className="mt-5 pt-6 border-t border-white/5">
+        <div className="mt-5 pt-6 border-t border-base-300">
           <div className="flex flex-wrap gap-2">
             {project.techStack?.map((tech) => (
               <span

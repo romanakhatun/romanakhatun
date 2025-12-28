@@ -1,4 +1,6 @@
 import EventManagement from "../assets/projects/event-management.png";
+import BiteHub from "../assets/projects/bite-hub.png";
+import Textilia from "../assets/projects/textilia.png";
 
 export const projects = [
   {
@@ -18,10 +20,10 @@ export const projects = [
       "TailwindCSS",
       "Framer Motion",
     ],
-    liveLink: "https://textilia-live-site.web.app",
-    githubClient: "https://github.com/romanakhatun/textilia-client",
-    githubServer: "https://github.com/romanakhatun/textilia-server",
-    projectImage: EventManagement,
+    liveLink: "https://textila-garments.web.app",
+    githubClient: "https://github.com/romanakhatun/textilia-garments-client",
+    githubServer: "https://github.com/romanakhatun/textilia-garments-server",
+    projectImage: Textilia,
   },
   {
     id: 2,
@@ -37,10 +39,10 @@ export const projects = [
       "Firebase",
       "RESTful API",
     ],
-    liveLink: "https://bitehub-live-site.web.app",
+    liveLink: "https://bitehub2.web.app/",
     githubClient: "https://github.com/romanakhatun/bitehub-client",
     githubServer: "https://github.com/romanakhatun/bitehub-server",
-    projectImage: EventManagement,
+    projectImage: BiteHub,
   },
   {
     id: 3,
@@ -56,8 +58,8 @@ export const projects = [
       "NextAuth",
       "Tailwind CSS",
     ],
-    liveLink: "https://dishvent-live-site.web.app", // Replace with actual live link
-    githubClient: "https://github.com/romanakhatun/dishvent", // Assuming client/server in one repo for Next.js
+    liveLink: "https://event-management-xi-bay.vercel.app/", // Replace with actual live link
+    githubClient: "https://github.com/romanakhatun/event-management", // Assuming client/server in one repo for Next.js
     githubServer: null, // No separate server repo for Next.js
     projectImage: EventManagement,
   },
