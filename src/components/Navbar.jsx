@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import ThemeToggle from "./ThemeToggle";
-import Logo from "./Logo";
+import { Link } from "react-router";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -13,52 +13,77 @@ const Navbar = () => {
   ];
 
   useEffect(() => {
-    const handleScroll = () => {
-      const sections = navLinks.map((link) =>
-        document.getElementById(link.href)
-      );
-      const scrollPosition = window.scrollY + 200;
+    const observerOptions = {
+      root: null,
+      rootMargin: "-20% 0px -70% 0px",
+      threshold: 0,
+    };
 
-      sections.forEach((section) => {
-        if (
-          section &&
-          scrollPosition >= section.offsetTop &&
-          scrollPosition < section.offsetTop + section.offsetHeight
-        ) {
-          setActiveSection(section.id);
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
         }
       });
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
+
+    navLinks.forEach((link) => {
+      const section = document.getElementById(link.href);
+      if (section) observer.observe(section);
+    });
+
+    return () => observer.disconnect();
   }, []);
 
+  // Smooth Scroll Click Handler
+  const handleScrollTo = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+      window.history.pushState(null, "", `#${id}`);
+    }
+  };
+
   return (
-    <div className="fixed top-6 left-1/2 -translate-x-1/2 z-100 navbar border border-base-300 bg-base-100 px-8 max-w-3xl w-[90%] rounded-full shadow-lg">
+    <header className="fixed top-6 left-1/2 -translate-x-1/2 z-100 navbar border border-base-300 bg-base-100/80 backdrop-blur-md px-8 max-w-3xl w-[90%] rounded-full shadow-lg">
       <div className="flex-1">
-        <a href="/#home" className="text-xl font-bold text-primary">
-          <Logo />
-        </a>
+        <Link
+          to="#home"
+          onClick={(e) => handleScrollTo(e, "home")}
+          className="text-xl font-bold text-neutral"
+        >
+          Romana
+        </Link>
       </div>
-      <ul className="px-1 gap-4 flex items-center justify-center">
+      <ul className="px-1 gap-6 flex items-center justify-center">
         {navLinks.map((link) => (
           <li key={link.href}>
-            <a
-              href={`#${link.href}`}
-              className={`text-xs uppercase ${
+            <Link
+              to={`#${link.href}`}
+              onClick={(e) => handleScrollTo(e, link.href)}
+              className={`text-[10px] font-bold uppercase tracking-widest transition-colors hover:text-primary ${
                 activeSection === link.href
-                  ? "text-primary active"
-                  : "text-base-content"
+                  ? "text-primary font-black"
+                  : "text-base-content/60"
               }`}
             >
               {link.name}
-            </a>
+            </Link>
           </li>
         ))}
+        <div className="w-px h-4 bg-base-300 mx-2"></div>
         <ThemeToggle />
       </ul>
-    </div>
+    </header>
   );
 };
 

@@ -71,6 +71,15 @@
   --color-error: #ef4444;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offset for fixed navbar */
+section {
+  scroll-margin-top: 100px;
+}
+
 body {
   font-family: "Outfit", sans-serif;
 }
@@ -101,7 +110,6 @@ body {
     @apply opacity-100;
   }
 }
-
 .section-animation {
   position: relative;
   isolation: isolate;
@@ -116,16 +124,20 @@ body {
     #cc7dda 57.23%,
     #f6be85 97.64%
   );
-  filter: blur(165px);
+  filter: blur(175px);
   width: 400px;
   height: 400px;
   top: -200px;
   left: 50%;
-  transform: translateX(-50%);
-  opacity: 0.45;
+  opacity: 0.95;
   z-index: -1;
   pointer-events: none;
+  transform: translateX(-50%);
   animation: circleAnim 10s infinite linear;
+  border-radius: 50%;
+  /* opacity: 0.4; */
+  /* transform: translateX(-50%) scale(1); */
+  /* animation: pulseOut 10s ease-out infinite; */
 }
 
 @keyframes circleAnim {
@@ -136,3 +148,16 @@ body {
     transform: translateX(-50%) rotate(360deg);
   }
 }
+
+/* @keyframes pulseOut {
+  0% {
+    transform: translateX(-50%) scale(0.6) rotate(0deg);
+    opacity: 0.3;
+    filter: blur(100px);
+  }
+  100% {
+    transform: translateX(-50%) scale(1.1) rotate(360deg);
+    opacity: 0.6;
+    filter: blur(150px);
+  }
+} */

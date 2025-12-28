@@ -2,11 +2,36 @@ import SectionTitle from "../components/SectionTitle";
 import { FiMail, FiMapPin, FiLinkedin } from "react-icons/fi";
 
 const Contact = () => {
+  // const contactData = [
+  //   {
+  //     href: "mailto:romanakhatun2004@gmail.com",
+  //     icon: FiMail,
+  //     label: "Email Me",
+  //     value: "romanakhatun2004@gmail.com",
+  //     color: "primary",
+  //   },
+  //   {
+  //     href: "https://linkedin.com/in/romanakhatun",
+  //     icon: FiLinkedin,
+  //     label: "LinkedIn",
+  //     value: "In/Romana-Khatun",
+  //     color: "#0077b5",
+  //   },
+  //   {
+  //     href: null,
+  //     icon: FiMapPin,
+  //     label: "Location",
+  //     value: "Dhaka, Bangladesh",
+  //     subtitle: "Available for Remote",
+  //     color: "primary",
+  //   },
+  // ];
+
   return (
     <section id="contact" className="py-24">
       <SectionTitle title1="Get In" title2="Touch" sectionNumber="4" />
 
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Email Card */}
         <a
           href="mailto:romanakhatun2004@gmail.com"
@@ -22,12 +47,9 @@ const Contact = () => {
             <p className="text-[10px] uppercase tracking-[0.3em] text-base-content/50 font-bold mb-1">
               Email Me
             </p>
-            <a
-              href="mailto:romanakhatun2004@gmail.com"
-              className="text-neutral text-lg"
-            >
-              <h3 className="truncate">romanakhatun2004@gmail.com</h3>
-            </a>
+            <h3 className="truncate text-neutral text-lg">
+              romanakhatun2004@gmail.com
+            </h3>
           </div>
         </a>
 
@@ -36,7 +58,7 @@ const Contact = () => {
           href="https://linkedin.com/in/romanakhatun"
           target="_blank"
           rel="noreferrer"
-          className="group relative p-8 rounded-3xl border border-base-300 bg-base-100/30 backdrop-blur-xl transition-all duration-500 hover:border-[#0077b5]/50 hover:-translate-y-2 overflow-hidden"
+          className="group relative p-8 rounded-3xl border border-base-300 bg-base-100/30 backdrop-blur-xl transition-all duration-500 hover:border-primary/50 hover:-translate-y-2 overflow-hidden"
         >
           <div className="absolute -right-4 -top-4 text-[#0077b5]/5 group-hover:text-[#0077b5]/10 transition-colors">
             <FiLinkedin size={120} />
@@ -49,13 +71,13 @@ const Contact = () => {
               LinkedIn
             </p>
             <h3 className="text-neutral font-title text-lg">
-              In/Romana-Khatun
+              In/romana-khatun
             </h3>
           </div>
         </a>
 
         {/* Location/WhatsApp Card */}
-        <div className="group relative p-8 rounded-3xl border border-base-300 bg-base-100/30 backdrop-blur-xl transition-all duration-500 hover:border-primary/50 overflow-hidden">
+        <div className="group relative p-8 rounded-3xl border border-base-300 bg-base-100/30 backdrop-blur-xl transition-all duration-500 hover:border-primary/50 hover:-translate-y-2 overflow-hidden">
           <div className="absolute -right-4 -top-4 text-primary/5 group-hover:text-primary/10 transition-colors">
             <FiMapPin size={120} />
           </div>

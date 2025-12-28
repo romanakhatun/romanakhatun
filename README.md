@@ -1,69 +1,91 @@
-## Hi there 👋! I'm Romana Khatun and <img align="center" src="https://img.icons8.com/external-kmg-design-flat-kmg-design/32/000000/external-love-valentines-day-kmg-design-flat-kmg-design-1.png"/> code
+# Hi there 👋, I'm Romana Khatun
 
-
-<p align="center"><img align="center" width="150" height="150" src="/assets/coding.png"></p>
-
-<br />
-
-- 🌱 I’m currently learning **Data Structures and Algorithms (DSA)**
-- 💻 Solving problems on platforms like **LeetCode**, **HackerRank**, and **Codeforces**
-- 📚 I enjoy learning about **problem solving**, **optimization**, and **logic building**
-- 🔭 I’m working on building my **DSA basics**
-- ✍️ I love writing short notes and documenting what I learn
-
-<br />
-
-### 🛠️ Languages and Tools:
-
-<p>
-  <img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white" />
-  <img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" />
-  <img alt="React" src="https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white" />
-  <img alt="Redux" src="https://img.shields.io/badge/-Redux-764ABC?style=flat-square&logo=redux&logoColor=white" />
-  <img alt="Nextjs" src="https://img.shields.io/badge/-Next.js-45b8d8?style=flat-square&logo=next.js&logoColor=white" />
-  <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" />
-  <img alt="SASS" src="https://img.shields.io/badge/-Sass-CC6699?style=flat-square&logo=sass&logoColor=white" />
-  <img alt="MongoDB" src="https://img.shields.io/badge/-MongoDB-13aa52?style=flat-square&logo=mongodb&logoColor=white" />
-  <img alt="Nodejs" src="https://img.shields.io/badge/-Nodejs-43853d?style=flat-square&logo=Node.js&logoColor=white" />
-  <img alt="Express.js" src="https://img.shields.io/badge/-Express.js-000000?style=flat-square&logo=express&logoColor=white" />
-  <img alt="Heroku" src="https://img.shields.io/badge/-Heroku-430098?style=flat-square&logo=heroku&logoColor=white" />
-  <img alt="Firebase" src="https://img.shields.io/badge/-Firebase-FFA611?style=flat-square&logo=Firebase&logoColor=white" />
-  <img alt="git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
-  <img alt="npm" src="https://img.shields.io/badge/-NPM-CB3837?style=flat-square&logo=npm&logoColor=white" />
-  <img alt="npm" src="https://img.shields.io/badge/-Visual_Studio_Code-0078D4?style=flat-square&logo=visual%20studio%20code&logoColor=white" />
+<p align="left">
+  <img src="https://img.shields.io/badge/-Full--Stack_Developer-38B2AC?style=for-the-badge&logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/-MERN_Stack-blue?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Next.js_Learner-000000?style=for-the-badge&logo=next.js&logoColor=white" />
 </p>
-<br />
 
-### 📈 GitHub Stats:
+### 💫 About Me
+
+I am a specialized **MERN Stack Developer** dedicated to building secure, scalable, and high-performance web applications. My expertise lies in architecting complex front-end systems. Currently, I am deepening my mastery of **Advanced React.js Patterns** to build more reusable, maintainable, and efficient UI components.
+
+---
+
+### 🚀 Technical Journey
+
+- 💼 **Front-end Developer Intern** at **Namyata Technology** (Delhi, India - Remote).
+- ⚡ Deep diving into **Advanced React Patterns**: Compound Components, Render Props, and HOCs.
+- 🔭 Scaling **TEXTILIA**, a production-grade order management system featuring Stripe & RBAC.
+- 📚 Focused on **declarative UI patterns** and **state management optimization**.
+
+---
+
+### 🛠️ Languages & Tools
+
+| Category         | Tools & Technologies                                                  |
+| :--------------- | :-------------------------------------------------------------------- |
+| **Frontend**     | `React.js`, `Next.js`, `TypeScript`, `Redux`, `Sass`, `Tailwind CSS`  |
+| **Backend**      | `Node.js`, `Express.js`, `Rest APIs`, `JWT Authentication`            |
+| **UI & Styling** | `Tailwind CSS`, `Framer Motion`, `Sass`, `Material UI`                |
+| **Database**     | `MongoDB`, `Firebase`, `PostgreSQL`                                   |
+| **DevOps/Tools** | `Git`, `GitHub`, `Vercel`, `Heroku`, `Stripe API`, `Google Analytics` |
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,redux,tailwind,nodejs,express,mongodb,firebase,git,vscode" />
+</p>
+
+---
+
+### 🏆 Featured Projects
+
+#### [TEXTILIA](https://textilia-live-site.web.app) | **Garments Order & Tracking**
+
+_Full-stack system for production workflows with role-based access and Stripe._
+
+- **Stack:** React, Node.js, MongoDB, Firebase, Framer Motion.
+
+#### [BITE HUB](https://bitehub-live-site.web.app) | **Food Review Platform**
+
+_Community platform for food reviews with search, filters, and favorites._
+
+- **Stack:** MERN Stack, Firebase, RESTful API.
+
+#### [DISHVENT](https://dishvent-live-site.web.app) | **Food Event Management**
+
+_Next.js platform for managing events with dynamic API routes._
+
+- **Stack:** Next.js, NextAuth, MongoDB, Tailwind CSS.
+
+---
+
+### 📊 GitHub Activity & Insights
+
 <p align="center">
-  
-  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=romanakhatun&layout=compact&theme=radical)
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=romanakhatun&theme=radical" width="100%" />
 </p>
-<br />
 
-### 📫 How to reach me: 
-<p>
-<a href="https://www.linkedin.com/in/romanakhatun">
-  <img align="left" alt="Romana Khatun | LinkedIn" width="26px" src="/assets/linkedin.png">
-</a>
-
-<a href="https://twitter.com/msromanakhatun">
-  <img align="left" alt="Romana Khatun | Twitter" width="26px" src="/assets/twitter.png">
-</a>
-
-<a href="https://www.instagram.com/romanakhatun_2004">
-  <img align="left" alt="Romana Khatun | Instagram" width="26px" src="/assets/instagram.png" />
-</a>
-
-<a href="mailto:romanakhatun2004@gmail.com">
-  <img align="left" alt="Romana Khatun | Gmail" width="26px" src="/assets/gmail.png" />
-</a>
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=romanakhatun&theme=radical" width="48%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=romanakhatun&theme=radical" width="48%" />
 </p>
-<br />
-<br/>
 
-[Read more about me](https://romana-khatun.web.app)
+---
 
-<br/>
+<h2 align="center">🤝 Let's Connect & Collaborate</h2>
 
-> 🚀 "Keep practicing, stay curious, and grow a little every day!"
+<p align="center">
+  <a href="https://www.linkedin.com/in/romanakhatun" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://twitter.com/msromanakhatun" target="_blank">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
+  </a>
+  <a href="mailto:romanakhatun2004@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+</p>
+
+<p align="center">
+  <i>"Passionate about building scalable MERN applications and solving complex problems."</i>
+</p>
