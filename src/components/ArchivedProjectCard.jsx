@@ -33,11 +33,11 @@ const ArchivedProjectCard = ({ project }) => {
 
         {/* Content */}
         <div className="grow space-y-3">
-          <h3 className="font-title text-xl md:text-2xl font-bold text-neutral tracking-tight group-hover:text-primary transition-colors">
+          <h3 className="text-xl md:text-2xl font-bold text-neutral tracking-tight group-hover:text-primary transition-colors">
             {project.title}
           </h3>
 
-          <p className="font-body text-xs md:text-sm text-base-content/60 leading-relaxed line-clamp-3">
+          <p className="text-xs md:text-sm text-base-content/60 leading-relaxed line-clamp-3">
             {project.description}
           </p>
         </div>
@@ -48,7 +48,7 @@ const ArchivedProjectCard = ({ project }) => {
             {project.techStack?.map((tech) => (
               <span
                 key={tech}
-                className="text-[9px] font-mono font-bold px-2 py-1 rounded bg-primary/5 text-primary/70 border border-primary/10 group-hover:border-primary/30 transition-colors"
+                className="text-[9px] font-bold px-2 py-1 rounded bg-primary/5 text-primary/70 border border-primary/10 group-hover:border-primary/30 transition-colors"
               >
                 {tech}
               </span>

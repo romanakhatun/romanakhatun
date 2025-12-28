@@ -32,7 +32,7 @@ const Loader = ({ finishLoading }) => {
           <motion.span
             initial={{ x: -20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            className="font-mono text-7xl text-primary font-light"
+            className="text-7xl text-primary font-light"
           >
             &#123;
           </motion.span>
@@ -66,7 +66,7 @@ const Loader = ({ finishLoading }) => {
           <motion.span
             initial={{ x: 20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            className="font-mono text-7xl text-primary font-light"
+            className="text-7xl text-primary font-light"
           >
             &#125;
           </motion.span>
@@ -80,7 +80,7 @@ const Loader = ({ finishLoading }) => {
               initial={{ opacity: 0, y: 5 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -5 }}
-              className="font-mono text-[9px] uppercase tracking-[0.6em] text-primary/50"
+              className="text-[9px] uppercase tracking-[0.6em] text-primary/50"
             >
               {stage === 1 && "Constructing_Shell"}
               {stage === 2 && "Injecting_Core_Logic"}

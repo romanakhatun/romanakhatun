@@ -8,7 +8,7 @@ const Home = () => {
       <div className="section-animation">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 w-full">
           <div className="flex-1 w-full space-y-2">
-            <p className="font-mono text-primary text-sm md:text-base tracking-widest uppercase font-bold animate-pulse">
+            <p className="text-primary text-sm md:text-base tracking-widest uppercase font-bold animate-pulse">
               Available for new projects
             </p>
             <h1 className="text-4xl md:text-7xl font-black font-bricolage text-neutral tracking-tighter leading-none">

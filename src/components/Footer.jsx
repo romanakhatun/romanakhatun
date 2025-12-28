@@ -17,10 +17,10 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
           {/* Brand Identity */}
           <div className="space-y-4">
-            <h2 className="font-title text-2xl font-black text-neutral uppercase tracking-tighter">
+            <h2 className="text-2xl font-black text-neutral uppercase tracking-tighter">
               Romana <span className="text-primary italic">Khatun</span>
             </h2>
-            <p className="font-body text-sm text-base-content/60 max-w-70 leading-relaxed">
+            <p className="text-sm text-base-content/60 max-w-70 leading-relaxed">
               MERN Stack Developer specializing in high-performance web
               applications and seamless user experiences.
             </p>
@@ -34,13 +34,13 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-base-300 gap-4">
-          <p className="font-body text-[10px] uppercase tracking-[0.2em] text-base-content/40">
+          <p className="text-[10px] uppercase tracking-[0.2em] text-base-content/40">
             © {currentYear} • Built with React & Tailwind by Romana
           </p>
 
           <button
             onClick={scrollToTop}
-            className="group flex items-center gap-2 font-body text-[10px] uppercase tracking-[0.2em] text-primary hover:text-neutral transition-colors cursor-pointer"
+            className="group flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-primary hover:text-neutral transition-colors cursor-pointer"
           >
             Back to top
             <FiArrowUp

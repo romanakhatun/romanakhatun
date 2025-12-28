@@ -34,7 +34,7 @@ const Experience = () => {
               {/* Header Info */}
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
                 <div>
-                  <h3 className="font-title text-2xl text-neutral font-bold tracking-tight">
+                  <h3 className="text-2xl text-neutral font-bold tracking-tight">
                     {exp.role}
                   </h3>
                   <div className="flex items-center gap-2 mt-1">
@@ -48,7 +48,7 @@ const Experience = () => {
                   </div>
                 </div>
 
-                <div className="font-body text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
+                <div className="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
                   {exp.duration}
                 </div>
               </div>

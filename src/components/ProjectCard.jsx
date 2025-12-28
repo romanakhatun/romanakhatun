@@ -28,15 +28,15 @@ const ProjectCard = ({ project, index }) => {
           }`}
         >
           <div className="space-y-2">
-            <h3 className="font-title text-3xl md:text-4xl font-black text-white uppercase">
+            <h3 className="text-3xl md:text-4xl font-black text-white uppercase">
               {project.title}
             </h3>
-            <p className="text-primary font-body text-xs font-bold uppercase tracking-[0.4em] ml-1">
+            <p className="text-primary text-xs font-bold uppercase tracking-[0.4em] ml-1">
               {project.subtitle}
             </p>
           </div>
 
-          <p className="font-body text-base-content/60 text-sm leading-relaxed max-w-md">
+          <p className="text-base-content/60 text-sm leading-relaxed max-w-md">
             {project.description}
           </p>
 

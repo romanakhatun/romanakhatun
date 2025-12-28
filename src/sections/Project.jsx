@@ -29,7 +29,7 @@ const Projects = () => {
 
       {/* Archive Header */}
       <div className="mb-12 mt-6 flex items-center gap-4">
-        <h3 className="font-title text-2xl font-bold text-white uppercase tracking-tighter">
+        <h3 className="text-2xl font-bold text-white uppercase tracking-tighter">
           Other Noteworthy <span className="text-primary italic">Projects</span>
         </h3>
         <div className="grow h-px bg-white/5"></div>
@@ -49,7 +49,7 @@ const Projects = () => {
       <div className="flex justify-center mt-12">
         <button
           onClick={() => setShowAll(!showAll)}
-          className="group relative flex items-center gap-2 px-8 py-4 rounded-xl border border-primary/20 bg-primary/5 text-primary text-xs font-bold uppercase tracking-[0.3em] overflow-hidden transition-all hover:bg-primary hover:text-white"
+          className="group relative flex items-center gap-2 px-8 py-4 rounded-xl border border-primary/20 bg-primary/5 text-primary text-xs font-bold uppercase tracking-[0.3em] overflow-hidden transition-all hover:bg-primary hover:text-white cursor-pointer"
         >
           {/* Background Glow Effect */}
           <div className="absolute inset-0 bg-primary opacity-0 group-hover:opacity-10 transition-opacity"></div>
@@ -68,7 +68,7 @@ const Projects = () => {
 
       {/* Professional Footer Indicator */}
       <div className="flex justify-center mt-20 opacity-30 group hover:opacity-100 transition-opacity">
-        <div className="flex items-center gap-6 text-base-content font-mono text-[10px] uppercase tracking-[0.6em]">
+        <div className="flex items-center gap-6 text-base-content text-[10px] uppercase tracking-[0.6em]">
           <div className="w-16 h-px bg-linear-to-r from-transparent to-current"></div>
           End of Showcase
           <div className="w-16 h-px bg-linear-to-l from-transparent to-current"></div>

@@ -3,7 +3,7 @@
 <p align="left">
   <img src="https://img.shields.io/badge/-Full--Stack_Developer-38B2AC?style=for-the-badge&logo=react&logoColor=white" />
   <img src="https://img.shields.io/badge/-MERN_Stack-blue?style=for-the-badge&logo=mongodb&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Next.js_Learner-000000?style=for-the-badge&logo=next.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Next.js_(SSR)-000000?style=for-the-badge&logo=next.js&logoColor=white" />
 </p>
 
 ### 💫 About Me

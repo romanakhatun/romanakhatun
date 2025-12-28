@@ -70,9 +70,7 @@ const Contact = () => {
             <p className="text-[10px] uppercase tracking-[0.3em] text-base-content/50 font-bold mb-1">
               LinkedIn
             </p>
-            <h3 className="text-neutral font-title text-lg">
-              In/romana-khatun
-            </h3>
+            <h3 className="text-neutral text-lg">In/romana-khatun</h3>
           </div>
         </a>
 
@@ -88,10 +86,8 @@ const Contact = () => {
             <p className="text-[10px] uppercase tracking-[0.3em] text-base-content/50 font-bold mb-1">
               Location
             </p>
-            <h3 className="text-neutral font-title text-lg italic">
-              Dhaka, Bangladesh
-            </h3>
-            <p className="text-base-content/40 text-xs mt-2 uppercase tracking-widest font-body font-bold">
+            <h3 className="text-neutral text-lg italic">Dhaka, Bangladesh</h3>
+            <p className="text-base-content/40 text-xs mt-2 uppercase tracking-widest font-bold">
               Available for Remote
             </p>
           </div>
@@ -104,13 +100,13 @@ const Contact = () => {
           <h4 className="text-neutral text-2xl uppercase font-black tracking-tighter italic">
             Currently Open to New Opportunities
           </h4>
-          <p className="text-base-content/60 font-body mt-1">
+          <p className="text-base-content/60 mt-1">
             Full-time Roles • Freelance Projects • Collaborations
           </p>
         </div>
         <a
           href="tel:+8801796953902"
-          className="px-8 py-4 rounded-full bg-primary text-neutral font-body font-black uppercase text-xs tracking-[0.2em] shadow-[0_0_20px_rgba(56,189,248,0.1)] hover:shadow-primary/20 transition-all active:scale-95"
+          className="px-8 py-4 rounded-full bg-primary text-neutral font-black uppercase text-xs tracking-[0.2em] shadow-[0_0_20px_rgba(56,189,248,0.1)] hover:shadow-primary/20 transition-all active:scale-95"
         >
           Call Me Now
         </a>

@@ -89,8 +89,11 @@ body {
 }
 
 @layer components {
-  .highlight-text {
+  /* .highlight-text {
     @apply font-medium text-transparent bg-clip-text bg-linear-to-r from-primary via-purple-500 to-primary  px-1;
+  } */
+  .highlight-text {
+    @apply text-primary;
   }
   .glass-card {
     @apply relative overflow-hidden rounded-2xl border border-base-300 bg-base-100/40 backdrop-blur-md transition-all duration-500 ease-out;

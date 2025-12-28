@@ -1,28 +1,33 @@
 import { FiGithub } from "react-icons/fi";
-import { RiTwitterXLine } from "react-icons/ri";
 import { CiGlobe } from "react-icons/ci";
 import { LuLinkedin } from "react-icons/lu";
+import { PiInstagramLogo } from "react-icons/pi";
 
 const Social_Links = [
   {
     name: "GitHub",
     icon: <FiGithub size={20} />,
-    href: "https://github.com/yourusername",
+    href: "https://github.com/romanakhatun/",
   },
   {
     name: "LinkedIn",
     icon: <LuLinkedin size={20} />,
-    href: "https://linkedin.com/in/yourusername",
+    href: "https://linkedin.com/in/romana-khatun",
   },
   {
-    name: "Twitter",
-    icon: <RiTwitterXLine size={20} />,
-    href: "https://x.com/yourusername",
+    name: "Instagram",
+    icon: <PiInstagramLogo size={20} />,
+    href: "https://www.instagram.com/romanakhatun_2004/",
   },
+  // {
+  //   name: "Twitter",
+  //   icon: <RiTwitterXLine size={20} />,
+  //   href: "https://x.com/yourusername",
+  // },
   {
     name: "Website",
     icon: <CiGlobe size={20} />,
-    href: "https://yourwebsite.com",
+    href: "https://romana-khatun.web.app/",
   },
 ];
 const SocialIcon = () => {
