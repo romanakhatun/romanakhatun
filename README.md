@@ -39,19 +39,19 @@ I am a specialized **MERN Stack Developer** dedicated to building secure, scalab
 
 ### 🏆 Featured Projects
 
-#### [TEXTILIA](https://textilia-live-site.web.app) | **Garments Order & Tracking**
+#### [TEXTILIA](https://textila-garments.web.app/) | **Garments Order & Tracking**
 
 _Full-stack system for production workflows with role-based access and Stripe._
 
 - **Stack:** React, Node.js, MongoDB, Firebase, Framer Motion.
 
-#### [BITE HUB](https://bitehub-live-site.web.app) | **Food Review Platform**
+#### [BITE HUB](https://bitehub2.web.app/) | **Food Review Platform**
 
 _Community platform for food reviews with search, filters, and favorites._
 
 - **Stack:** MERN Stack, Firebase, RESTful API.
 
-#### [DISHVENT](https://dishvent-live-site.web.app) | **Food Event Management**
+#### [DISHVENT](https://event-management-xi-bay.vercel.app/) | **Food Event Management**
 
 _Next.js platform for managing events with dynamic API routes._
 
