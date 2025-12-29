@@ -44,8 +44,8 @@ I am a specialized **MERN Stack Developer** dedicated to building secure, scalab
 </p>
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=romanakhatun&theme=radical" width="48%" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=romanakhatun&theme=radical" width="48%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=romanakhatun&theme=radical" width="50%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=romanakhatun&theme=radical" width="50%" />
 </p>
 
 ---
