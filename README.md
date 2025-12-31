@@ -1,4 +1,6 @@
-# Hi there 👋, I'm Romana Khatun
+<p align="center">
+  <img src="./assets/image-banner.png" alt="Romana Khatun Banner" width="100%">
+</p>
 
 <p align="left">
   <img src="https://img.shields.io/badge/-Full--Stack_Developer-38B2AC?style=for-the-badge&logo=react&logoColor=white" />
