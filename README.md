@@ -10,8 +10,7 @@
 
 ### 💫 About Me
 
-I am a specialized **MERN Stack Developer** dedicated to building secure, scalable, and high-performance web applications. My expertise lies in architecting complex front-end systems. Currently, I am deepening my mastery of **Advanced React.js Patterns** to build more reusable, maintainable, and efficient UI components.
-
+I am a specialized **MERN Stack Developer** dedicated to building secure, scalable, and high-performance web applications. My expertise lies in architecting complex front-end systems. 
 ---
 
 ## 🚧 Current Activities
