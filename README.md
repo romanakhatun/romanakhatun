@@ -26,9 +26,9 @@ I am a specialized **MERN Stack Developer** dedicated to building secure, scalab
 ## 🚀 Technical Journey
 
 - Front-end Developer Intern at **Namyata Technology** (Remote – Delhi, India).
-- Deep diving into **advanced React patterns** including Compound Components, Render Props, and Higher-Order Components (HOCs).
-- Actively scaling **Textila**, a production-grade order management system with Stripe payments and role-based access control (RBAC).
-- Focused on **declarative UI design** and **state management optimization** for scalable applications.
+- Exploring advanced React patterns for scalable UI development.
+- Building and scaling Textila with Stripe integration and RBAC.
+- Improving declarative UI design and state management.
 
 ---
 
