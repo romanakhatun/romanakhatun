@@ -13,6 +13,15 @@
 I am a specialized **MERN Stack Developer** dedicated to building secure, scalable, and high-performance web applications. My expertise lies in architecting complex front-end systems. Currently, I am deepening my mastery of **Advanced React.js Patterns** to build more reusable, maintainable, and efficient UI components.
 
 ---
+## 🚧 Current Activities
+
+- Deepening my mastery of **advanced React.js patterns** to build more reusable, maintainable, and efficient UI components.
+- Exploring **backend development concepts** to strengthen API design, data handling, and server-side logic.
+- Learning and experimenting with **Next.js** for server-side rendering, improved performance, and SEO-friendly React applications.
+- Improving overall **full-stack architecture understanding** by connecting frontend and backend best practices.
+- Continuously refactoring code and applying modern development pattern
+
+---
 
 ### 🚀 Technical Journey
 
