@@ -13,22 +13,22 @@
 I am a specialized **MERN Stack Developer** dedicated to building secure, scalable, and high-performance web applications. My expertise lies in architecting complex front-end systems. Currently, I am deepening my mastery of **Advanced React.js Patterns** to build more reusable, maintainable, and efficient UI components.
 
 ---
+
 ## 🚧 Current Activities
 
-- Deepening my mastery of **advanced React.js patterns** to build more reusable, maintainable, and efficient UI components.
-- Exploring **backend development concepts** to strengthen API design, data handling, and server-side logic.
-- Learning and experimenting with **Next.js** for server-side rendering, improved performance, and SEO-friendly React applications.
-- Improving overall **full-stack architecture understanding** by connecting frontend and backend best practices.
-- Continuously refactoring code and applying modern development pattern
+- Advancing my skills in **React.js advanced patterns** for scalable and reusable UI development.
+- Exploring **backend development** to improve API structure and data flow.
+- Learning **Next.js** to build performant, SEO-optimized React applications.
+- Strengthening full-stack development best practices.
 
 ---
 
-### 🚀 Technical Journey
+## 🚀 Technical Journey
 
-- 💼 **Front-end Developer Intern** at **Namyata Technology** (Delhi, India - Remote).
-- ⚡ Deep diving into **Advanced React Patterns**: Compound Components, Render Props, and HOCs.
-- 🔭 Scaling **TEXTILIA**, a production-grade order management system featuring Stripe & RBAC.
-- 📚 Focused on **declarative UI patterns** and **state management optimization**.
+- Front-end Developer Intern at **Namyata Technology** (Remote – Delhi, India).
+- Deep diving into **advanced React patterns** including Compound Components, Render Props, and Higher-Order Components (HOCs).
+- Actively scaling **Textila**, a production-grade order management system with Stripe payments and role-based access control (RBAC).
+- Focused on **declarative UI design** and **state management optimization** for scalable applications.
 
 ---
 
