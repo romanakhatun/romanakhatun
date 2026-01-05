@@ -127,10 +127,14 @@ const About = () => {
             </ul>
 
             {/* CTA button */}
-            <button className="group flex items-center gap-2 px-5 py-3 rounded-xl border border-primary/20 bg-primary/5 text-primary text-xs font-bold uppercase tracking-widest hover:bg-primary hover:text-neutral transition-all duration-300 mt-8 cursor-pointer">
+            <a
+              href="../assets/Romana-Resume.pdf"
+              download
+              className="group inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-primary/20 bg-primary/5 text-primary text-xs font-bold uppercase tracking-widest hover:bg-primary hover:text-neutral transition-all duration-300 mt-8 cursor-pointer"
+            >
               <FiDownload size={16} className="animate-bounce" />
               Download Resume
-            </button>
+            </a>
           </div>
         </div>
 

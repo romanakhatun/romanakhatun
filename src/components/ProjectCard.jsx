@@ -101,7 +101,7 @@ const ProjectCard = ({ project, index }) => {
 
         {/*  Visual Stage */}
         <div
-          className={`w-full lg:col-span-6 relative group/img ${
+          className={`w-full lg:col-span-6 relative group ${
             isEven ? "lg:order-2" : "lg:order-1"
           }`}
         >
@@ -109,14 +109,14 @@ const ProjectCard = ({ project, index }) => {
             <img
               src={project.projectImage}
               alt={project.title}
-              className="w-full h-full object-cover grayscale group-hover/img:grayscale-0 scale-105 group-hover/img:scale-100 transition-all duration-1000 ease-out"
+              className="w-full h-full object-cover grayscale group-hover:grayscale-0 scale-105 group-hover:scale-100 transition-all duration-600 ease-out"
             />
-            <div className="absolute inset-0 bg-primary/10 mix-blend-multiply opacity-40 group-hover/img:opacity-0 transition-opacity duration-700"></div>
+            <div className="absolute inset-0 bg-primary/10 mix-blend-multiply opacity-40 group-hover:opacity-0 transition-opacity duration-700"></div>
           </div>
 
           {/* Corner Accents - Responsive size */}
-          <div className="absolute -top-3 -right-3 w-16 h-16 border-t border-r border-primary/30 group-hover/img:border-primary transition-colors duration-500"></div>
-          <div className="absolute -bottom-3 -left-3 w-16 h-16 border-b border-l border-primary/30 group-hover/img:border-primary transition-colors duration-500"></div>
+          <div className="absolute -top-3 -right-3 w-16 h-16 border-t border-r border-primary/30 group-hover:border-primary transition-colors duration-500"></div>
+          <div className="absolute -bottom-3 -left-3 w-16 h-16 border-b border-l border-primary/30 group-hover:border-primary transition-colors duration-500"></div>
         </div>
       </div>
     </div>
