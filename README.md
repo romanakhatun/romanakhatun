@@ -1,7 +1,4 @@
-<p align="center">
-  <img src="./assets/image-banner.png" alt="Romana Khatun Banner" width="100%">
-</p>
-
+# Hi, I'm Romana 👋
 <p align="left">
   <img src="https://img.shields.io/badge/-Full--Stack_Developer-38B2AC?style=for-the-badge&logo=react&logoColor=white" />
   <img src="https://img.shields.io/badge/-MERN_Stack-blue?style=for-the-badge&logo=mongodb&logoColor=white" />
@@ -11,6 +8,7 @@
 ### 💫 About Me
 
 I am a specialized **MERN Stack Developer** dedicated to building secure, scalable, and high-performance web applications. My expertise lies in architecting complex front-end systems. 
+
 ---
 
 ## 🚧 Current Activities
